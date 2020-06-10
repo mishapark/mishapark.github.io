@@ -1,0 +1,29 @@
+.hero {
+    background: #f5f5f5;
+.container--hero {
+    padding: 23px 52px 29px 80px;
+}
+}
+.hero__title {
+    font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 391px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.hero__subtitle {
+    font-size: 18px;
+    width: 320px;
+    margin-bottom: 53px;
+}
+
+.hero__img {
+    width: 500px;
+    height: 500px;
+    background: #fff url(/img/pics/MX452.png) center center no-repeat;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -356px;
+    margin-left: 433px;
+}

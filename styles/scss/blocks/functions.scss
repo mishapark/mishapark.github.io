@@ -1,0 +1,22 @@
+.functions__list {
+    display: flex;
+    flex-direction: row;
+    margin-top: 108px;
+    width: 507px;
+    justify-content: space-between;
+}
+.functions__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.functions__item-pic {
+    width: 44px;
+    height: 44px;
+}
+.functions__item-logo {
+    margin-right: 9px;
+}
+.functions__item-text {
+    width: 97px;
+}

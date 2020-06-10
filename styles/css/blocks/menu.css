@@ -1,0 +1,16 @@
+.header__menu {
+  margin-right: 51px;
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu__item {
+  margin-right: 26px;
+}
+.menu__item:last-child {
+  margin-right: 0;
+}

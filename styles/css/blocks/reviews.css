@@ -1,0 +1,10 @@
+.container--reviews {
+  padding: 68px 81px 66px;
+}
+
+.reviews__title {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
