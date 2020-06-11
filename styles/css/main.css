@@ -69,13 +69,12 @@ input, button {
 }
 
 .button {
-  width: 160px;
-  height: 52px;
   font-size: 16px;
   padding: 17px 41px;
   border-radius: 25.5px;
   text-transform: uppercase;
   border: none;
+  display: inline-block;
 }
 
 .button--theme--red {
@@ -92,14 +91,14 @@ input, button {
   display: flex;
   flex-direction: row;
   margin-top: 108px;
-  width: 507px;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .functions__item {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-right: 15px;
 }
 
 .functions__item-pic {
@@ -131,6 +130,7 @@ input, button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
 
 .hero__title {
@@ -154,8 +154,8 @@ input, button {
   background: #fff url(/img/pics/MX452.png) center center no-repeat;
   border-radius: 50%;
   position: absolute;
-  margin-top: 76px;
-  margin-left: 512px;
+  top: 107px;
+  right: 6px;
 }
 
 .header__logo {
@@ -187,7 +187,7 @@ input, button {
 }
 
 .container--why {
-  padding: 96px 52px 107px;
+  padding: 96px 0px 107px;
 }
 
 .why__title {
@@ -202,11 +202,11 @@ input, button {
   color: #666666;
   text-align: center;
   width: 571px;
-  height: 38px;
   margin-bottom: 62px;
   font-size: 18px;
   line-height: 1.2;
-  margin-left: 189px;
+  margin: 0 auto;
+  margin-bottom: 57px;
 }
 
 .why__list {
@@ -224,8 +224,8 @@ input, button {
 .why__item::after {
   content: url(/img/pics/1.png);
   position: absolute;
-  left: 291px;
-  top: 52px;
+  left: 100%;
+  top: 20%;
 }
 .why__item:last-child::after {
   content: none;
@@ -270,7 +270,7 @@ input, button {
 
 .reviews__content {
   width: 940px;
-  height: 345px;
+  min-height: 345px;
   background: #f5f5f5;
   padding: 50px 110px 35px 45px;
   display: flex;
@@ -291,11 +291,15 @@ input, button {
 }
 
 .reviews__content-logo {
-  background: url(/img/pics/billie.png) center center no-repeat;
-  background-size: 200%;
-  width: 253.1px;
-  height: 259.3px;
+  width: 253px;
+  height: 260px;
   margin-right: 20px;
+}
+
+.reviews__content-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .reviews__content-info {
@@ -328,18 +332,35 @@ input, button {
 }
 
 .reviews__item {
-  width: 66.7px;
-  height: 66.7px;
+  width: 72.7px;
+  height: 72.7px;
   border-radius: 50%;
+  border: 6px solid transparent;
   overflow: hidden;
+  position: relative;
   margin-right: 11.7px;
 }
 .reviews__item:last-child {
   margin-right: 0;
 }
-
 .reviews__item--active {
-  border: 6px #e01f3d;
+  border-color: #e01f3d;
+}
+
+.reviews__item-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+}
+
+.reviews__item-pic {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .fixed-menu {
@@ -378,7 +399,7 @@ input, button {
 }
 
 .feedback {
-  background: url(/img/pics/formsbg.png) center center no-repeat;
+  background: url(/img/pics/formsbg.png) center bottom no-repeat;
   background-color: #171717;
 }
 

@@ -1,11 +1,10 @@
 .button {
-    width: 160px;
-    height: 52px;
     font-size: 16px;
     padding: 17px 41px;
     border-radius: 25.5px;
     text-transform: uppercase;
     border: none;
+    display: inline-block;
 }
 .button--theme--red {
     background: #e01f3d;

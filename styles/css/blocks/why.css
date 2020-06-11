@@ -1,5 +1,5 @@
 .container--why {
-  padding: 96px 52px 107px;
+  padding: 96px 0px 107px;
 }
 
 .why__title {
@@ -14,11 +14,11 @@
   color: #666666;
   text-align: center;
   width: 571px;
-  height: 38px;
   margin-bottom: 62px;
   font-size: 18px;
   line-height: 1.2;
-  margin-left: 189px;
+  margin: 0 auto;
+  margin-bottom: 57px;
 }
 
 .why__list {
@@ -36,8 +36,8 @@
 .why__item::after {
   content: url(/img/pics/1.png);
   position: absolute;
-  left: 291px;
-  top: 52px;
+  left: 100%;
+  top: 20%;
 }
 .why__item:last-child::after {
   content: none;
