@@ -6,6 +6,10 @@
   color: #fff;
   padding: 17px 41px;
   border-radius: 25.5px;
-  margin-bottom: 94px;
   text-transform: uppercase;
+}
+
+.button--theme--red {
+  background: #e01f3d;
+  color: #fff;
 }
