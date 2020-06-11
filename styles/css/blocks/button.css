@@ -2,14 +2,18 @@
   width: 160px;
   height: 52px;
   font-size: 16px;
-  background: #e01f3d;
-  color: #fff;
   padding: 17px 41px;
   border-radius: 25.5px;
   text-transform: uppercase;
+  border: none;
 }
 
 .button--theme--red {
   background: #e01f3d;
   color: #fff;
+}
+
+.button--theme--transparent {
+  background: transparent;
+  color: #999999;
 }
