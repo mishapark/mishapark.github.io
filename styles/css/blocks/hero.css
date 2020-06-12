@@ -8,6 +8,17 @@
   justify-content: space-between;
   position: relative;
 }
+.hero .container--hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #999999;
+  height: 50px;
+  width: 15px;
+  right: 4%;
+  top: 97%;
+  transform: rotate(40deg);
+}
 
 .hero__title {
   font-size: 48px;

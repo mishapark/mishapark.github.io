@@ -5,12 +5,27 @@
     text-transform: uppercase;
     border: none;
     display: inline-block;
+    cursor: pointer;
 }
 .button--theme--red {
     background: #e01f3d;
     color: #fff;
+
+    &:hover {
+        background-color: #ca1b36;
+    }
 }
 .button--theme--transparent {
     background: transparent;
     color: #999999;
+    padding: 0;
+
+    &:hover {
+        color: #e01f3d;
+    }
+}
+
+
+.button--section--feedback {
+    margin-right: 17px;
 }

@@ -75,16 +75,28 @@ input, button {
   text-transform: uppercase;
   border: none;
   display: inline-block;
+  cursor: pointer;
 }
 
 .button--theme--red {
   background: #e01f3d;
   color: #fff;
 }
+.button--theme--red:hover {
+  background-color: #ca1b36;
+}
 
 .button--theme--transparent {
   background: transparent;
   color: #999999;
+  padding: 0;
+}
+.button--theme--transparent:hover {
+  color: #e01f3d;
+}
+
+.button--section--feedback {
+  margin-right: 17px;
 }
 
 .functions__list {
@@ -131,6 +143,17 @@ input, button {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+}
+.hero .container--hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #999999;
+  height: 50px;
+  width: 15px;
+  right: 4%;
+  top: 97%;
+  transform: rotate(40deg);
 }
 
 .hero__title {
@@ -202,11 +225,9 @@ input, button {
   color: #666666;
   text-align: center;
   width: 571px;
-  margin-bottom: 62px;
   font-size: 18px;
   line-height: 1.2;
-  margin: 0 auto;
-  margin-bottom: 57px;
+  margin: 0 auto 57px;
 }
 
 .why__list {
@@ -385,6 +406,7 @@ input, button {
   border-radius: 50%;
   border: 1px solid transparent;
   display: block;
+  position: relative;
 }
 .fixed-menu__link::before {
   content: "";

@@ -1,12 +1,26 @@
 .hero {
     background: #f5f5f5;
+
 .container--hero {
     padding: 23px 52px 36px 80px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: relative;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        background: #999999;
+        height: 50px;
+        width: 15px;
+        right: 4%;
+        top: 97%;
+        transform: rotate(40deg);
+    }
 }
+
 }
 .hero__title {
     font-size: 48px;
