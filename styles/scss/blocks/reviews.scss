@@ -1,5 +1,18 @@
 .container--reviews {
     padding: 68px 81px 66px;
+    position: relative;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        background: #999999;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        left: 4%;
+        top: 97.5%;
+    }
 }
 .reviews__title {
     font-size: 48px;

@@ -1,0 +1,86 @@
+.socials{
+    display: flex;
+}
+.socials__item{
+    margin-right: 10px;
+}
+.socials__link{
+    display: block;
+    text-decoration: none;
+    width: 36px;
+    height: 36px;
+    background: center center no-repeat;
+    position: relative;
+}
+.socials__item--icon--tg{
+    .socials__link {
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 36px;
+            height: 36px;
+            background: url(/img/pics/socials/social_sprites.png) -178px;
+        }
+        &:hover::after {
+            background: url(/img/pics/socials/social_sprites.png) 46px;
+        }
+    }
+}
+.socials__item--icon--vk{
+    .socials__link {
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 36px;
+            height: 36px;
+            background: url(/img/pics/socials/social_sprites.png) -122px;
+        }
+        &:hover::after {
+            background: url(/img/pics/socials/social_sprites.png) 102px;
+        }
+    }
+}
+.socials__item--icon--fb{
+    .socials__link {
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 36px;
+            height: 36px;
+            background: url(/img/pics/socials/social_sprites.png) -10px;
+        }
+        &:hover::after {
+            background: url(/img/pics/socials/social_sprites.png) 214px;
+        }
+    }
+}
+.socials__item--icon--insta{
+    .socials__link {
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 36px;
+            height: 36px;
+            background: url(/img/pics/socials/social_sprites.png) -66px;
+        }
+        &:hover::after {
+            background: url(/img/pics/socials/social_sprites.png) 158px;
+        }
+    }
+}

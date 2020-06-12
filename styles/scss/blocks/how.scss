@@ -1,0 +1,20 @@
+.how {
+    background: #f5f5f5;
+}
+.container__how {
+    padding: 68px 0px 94px;
+    position: relative;
+    
+    &::after {
+        content: "";
+        right: 4%;
+        top: 97.5%;
+    }
+}
+.how__title {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 51px;
+}
