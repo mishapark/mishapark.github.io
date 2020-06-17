@@ -690,11 +690,19 @@ input, button {
   margin-bottom: 5rem;
 }
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 .container--footer {
   padding: 2.8rem 0rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #fff;
 }
 
 .socials {
@@ -772,4 +780,8 @@ input, button {
 }
 .socials__item--icon--insta .socials__link:hover::after {
   background: url(/img/pics/socials/social_sprites.png) 158px;
+}
+
+.map {
+  position: relative;
 }
