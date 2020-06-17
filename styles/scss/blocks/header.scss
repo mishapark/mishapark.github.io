@@ -1,14 +1,13 @@
 .header {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 8.2rem;
 }
 .header__logo {
     display: block;
-    width: 4.1rem;
-    height: 4.1rem;
+    width: 41px;
+    height: 41px;
     margin-right: 4rem;
 }
 .header__pic {
@@ -17,4 +16,7 @@
 }
 .header__menu {
     margin-right: 5rem;
+    @include tablets {
+        margin-right: 0;
+    }
   }

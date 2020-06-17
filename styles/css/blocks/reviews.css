@@ -36,11 +36,11 @@
   content: "";
   display: block;
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 10rem;
+  height: 10rem;
   border-radius: 50%;
   background: #fff;
-  top: -56px;
+  top: -16%;
   left: 45%;
 }
 

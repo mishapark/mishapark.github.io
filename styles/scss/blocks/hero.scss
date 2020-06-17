@@ -21,6 +21,14 @@
     }
 }
 
+.hero__title-area {
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
 }
 .hero__title {
     font-size: 4.8rem;
@@ -39,9 +47,18 @@
 .hero__img {
     width: 48.7rem;
     height: 48.7rem;
-    background: #fff url(/img/pics/MX452.png) center center no-repeat;
     border-radius: 50%;
     position: absolute;
     top: 18%;
     right: 5%;
+    overflow: hidden;
+    @include tablets {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -93%);
+    }
+}
+.hero__pic {
+    height: 100%;
+    width: 100%;
 }

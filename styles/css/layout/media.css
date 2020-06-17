@@ -2,14 +2,26 @@
   html {
     font-size: 8px;
   }
+
+  .container {
+    max-width: 700px;
+  }
 }
 @media (max-width: 768px) {
   html {
     font-size: 6x;
   }
+
+  .container {
+    max-width: 450px;
+  }
 }
 @media (max-width: 480px) {
   html {
     font-size: 4x;
+  }
+
+  .container {
+    max-width: 300px;
   }
 }

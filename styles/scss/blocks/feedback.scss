@@ -4,6 +4,15 @@
 }
 .container--feedback {
     padding: 8.5rem 0rem 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    @include tablets {
+        justify-content: center;
+        padding: 18.5rem 12rem 19.3rem;
+    }
 }
 .feedback__title {
     text-transform: uppercase;
@@ -15,12 +24,20 @@
 }
 .feedback__form {
     display: flex;
+
+    @include tablets {
+        flex-direction: column;
+    }
 }
 .feedback__form-col {
     flex: 1;
     margin-right: 2rem;
 
     &:last-child {
+        margin-right: 0;
+    }
+
+    @include tablets {
         margin-right: 0;
     }
 }
@@ -43,13 +60,17 @@
 .feedback__form-input {
     width: 100%;
     border: none;
-    padding: 18px 11px;
+    padding: 1.8rem 1.1rem;
     border: solid 3px transparent;
 
     &--textarea {
         height: 18rem;
         resize: none;
         margin-bottom: 0.3rem;
+        
+        @include tablets {
+            height: 13rem;
+        }
     }
 
     &:focus {
@@ -65,9 +86,19 @@
 
     &--checkbox {
         margin-bottom: 4rem;
+
     }
 
     &:last-child {
         margin-bottom: 0;
     }
+
+    @include tablets {
+        justify-content: center;
+    }
+}
+
+.feedback__buttons {
+    display: flex;
+    justify-content: center;
 }

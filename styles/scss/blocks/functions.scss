@@ -2,6 +2,9 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    @include tablets {
+        display: none;
+    }
 }
 .functions__item {
     display: flex;

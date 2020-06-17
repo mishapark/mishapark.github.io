@@ -5,6 +5,10 @@
 
 .container--feedback {
   padding: 8.5rem 0rem 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .feedback__title {

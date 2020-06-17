@@ -9,8 +9,8 @@
 .socials__link {
   display: block;
   text-decoration: none;
-  width: 3.6rem;
-  height: 3.6rem;
+  width: 36px;
+  height: 36px;
   background: center center no-repeat;
   position: relative;
 }
@@ -22,8 +22,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 3.6rem;
-  height: 3.6rem;
+  width: 36px;
+  height: 36px;
   background: url(/img/pics/socials/social_sprites.png) -178px;
 }
 .socials__item--icon--tg .socials__link:hover::after {
@@ -37,8 +37,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 3.6rem;
-  height: 3.6rem;
+  width: 36px;
+  height: 36px;
   background: url(/img/pics/socials/social_sprites.png) -122px;
 }
 .socials__item--icon--vk .socials__link:hover::after {
@@ -52,8 +52,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 3.6rem;
-  height: 3.6rem;
+  width: 36px;
+  height: 36px;
   background: url(/img/pics/socials/social_sprites.png) -10px;
 }
 .socials__item--icon--fb .socials__link:hover::after {
@@ -67,8 +67,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 3.6rem;
-  height: 3.6rem;
+  width: 36px;
+  height: 36px;
   background: url(/img/pics/socials/social_sprites.png) -66px;
 }
 .socials__item--icon--insta .socials__link:hover::after {
