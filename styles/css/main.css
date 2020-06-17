@@ -15,6 +15,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+section {
+  height: 100vh;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-weight: normal;
@@ -44,7 +48,8 @@ ul li {
 
 .container {
   margin: 0 auto;
-  width: 1101px;
+  width: 110rem;
+  height: inherit;
 }
 
 input, button {
@@ -213,8 +218,8 @@ input, button {
   background: #fff url(/img/pics/MX452.png) center center no-repeat;
   border-radius: 50%;
   position: absolute;
-  top: 10.7rem;
-  right: 0.6rem;
+  top: 18%;
+  right: 5%;
 }
 
 .menu__list {
@@ -436,7 +441,7 @@ input, button {
 
 .fixed-menu {
   position: fixed;
-  top: 20%;
+  top: 37%;
   right: 3%;
 }
 

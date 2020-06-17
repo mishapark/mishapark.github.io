@@ -14,6 +14,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+section {
+  height: 100vh;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-weight: normal;
@@ -43,7 +47,8 @@ ul li {
 
 .container {
   margin: 0 auto;
-  width: 1101px;
+  width: 110rem;
+  height: inherit;
 }
 
 input, button {
