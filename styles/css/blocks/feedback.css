@@ -4,16 +4,16 @@
 }
 
 .container--feedback {
-  padding: 85px 0px 90px;
+  padding: 8.5rem 0rem 9rem;
 }
 
 .feedback__title {
   text-transform: uppercase;
   color: #fff;
-  font-size: 48px;
+  font-size: 4.8rem;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 54px;
+  margin-bottom: 5.4rem;
 }
 
 .feedback__form {
@@ -22,7 +22,7 @@
 
 .feedback__form-col {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 2rem;
 }
 .feedback__form-col:last-child {
   margin-right: 0;
@@ -30,12 +30,12 @@
 
 .feedback__form-row {
   display: flex;
-  margin-bottom: 18px;
+  margin-bottom: 1.8rem;
 }
 
 .feedback__form-block {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 2rem;
 }
 .feedback__form-block:last-child {
   margin-right: 0;
@@ -43,7 +43,7 @@
 
 .feedback__form-title {
   color: #f8faf9;
-  margin-bottom: 6px;
+  margin-bottom: 0.6rem;
 }
 
 .feedback__form-input {
@@ -53,9 +53,9 @@
   border: solid 3px transparent;
 }
 .feedback__form-input--textarea {
-  height: 180px;
+  height: 18rem;
   resize: none;
-  margin-bottom: 3px;
+  margin-bottom: 0.3rem;
 }
 .feedback__form-input:focus {
   border-color: #e01f3d;
@@ -65,10 +65,10 @@
 .feedback__form-controls {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 9px;
+  margin-bottom: 0.9rem;
 }
 .feedback__form-controls--checkbox {
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
 }
 .feedback__form-controls:last-child {
   margin-bottom: 0;

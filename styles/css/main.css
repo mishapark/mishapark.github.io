@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+html {
+  font-size: 10px;
+}
+
 body {
   margin: 0;
+  height: 100%;
   font-family: "Play", Helvetica, sans-serif;
   color: #000;
   font-size: 16px;
@@ -8,10 +13,6 @@ body {
   background: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-body, html {
-  height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -58,8 +59,23 @@ input, button {
   overflow: hidden;
 }
 
+@media (max-width: 992px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 6x;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 4x;
+  }
+}
 .contacts__phone {
-  font-size: 21px;
+  font-size: 2.1rem;
   font-style: normal;
 }
 .contacts__phone::before {
@@ -69,8 +85,8 @@ input, button {
 }
 
 .button {
-  font-size: 16px;
-  padding: 17px 41px;
+  font-size: 1.6rem;
+  padding: 1.7rem 4.1rem;
   border-radius: 25.5px;
   text-transform: uppercase;
   border: none;
@@ -96,13 +112,16 @@ input, button {
 }
 
 .button--section--feedback {
-  margin-right: 17px;
+  margin-right: 1.7rem;
+}
+
+.button--section--hero {
+  margin-bottom: 10.8rem;
 }
 
 .functions__list {
   display: flex;
   flex-direction: row;
-  margin-top: 108px;
   justify-content: flex-start;
 }
 
@@ -110,20 +129,21 @@ input, button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-right: 15px;
+  margin-right: 1.5rem;
 }
 
 .functions__item-pic {
-  width: 44px;
-  height: 44px;
+  width: 4.4rem;
+  height: 4.4rem;
 }
 
 .functions__item-logo {
-  margin-right: 9px;
+  margin-right: 1rem;
 }
 
 .functions__item-text {
-  width: 97px;
+  font-size: 1.6rem;
+  width: 9.7rem;
 }
 
 .header {
@@ -131,14 +151,30 @@ input, button {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 82px;
+  margin-bottom: 8.2rem;
+}
+
+.header__logo {
+  display: block;
+  width: 4.1rem;
+  height: 4.1rem;
+  margin-right: 4rem;
+}
+
+.header__pic {
+  width: 100%;
+  height: 100%;
+}
+
+.header__menu {
+  margin-right: 5rem;
 }
 
 .hero {
   background: #f5f5f5;
 }
 .hero .container--hero {
-  padding: 23px 52px 36px 80px;
+  padding: 2.3rem 5.2rem 3.6rem 8rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -149,52 +185,36 @@ input, button {
   display: block;
   position: absolute;
   background: #999999;
-  height: 50px;
-  width: 15px;
+  height: 5rem;
+  width: 1.5rem;
   right: 4%;
   top: 97%;
   transform: rotate(40deg);
 }
 
 .hero__title {
-  font-size: 48px;
+  font-size: 4.8rem;
   font-weight: bold;
   text-transform: uppercase;
-  width: 391px;
+  width: 39.1rem;
   line-height: 1.2;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .hero__subtitle {
-  font-size: 18px;
-  width: 320px;
-  margin-bottom: 53px;
+  font-size: 1.8rem;
+  width: 32rem;
+  margin-bottom: 5.3rem;
 }
 
 .hero__img {
-  width: 486px;
-  height: 487px;
+  width: 48.7rem;
+  height: 48.7rem;
   background: #fff url(/img/pics/MX452.png) center center no-repeat;
   border-radius: 50%;
   position: absolute;
-  top: 107px;
-  right: 6px;
-}
-
-.header__logo {
-  display: block;
-  width: 41px;
-  height: 41px;
-  margin-right: 40px;
-}
-
-.header__pic {
-  width: 100%;
-  height: 100%;
-}
-
-.header__menu {
-  margin-right: 51px;
+  top: 10.7rem;
+  right: 0.6rem;
 }
 
 .menu__list {
@@ -203,14 +223,18 @@ input, button {
 }
 
 .menu__item {
-  margin-right: 26px;
+  margin-right: 2.6rem;
 }
 .menu__item:last-child {
   margin-right: 0;
 }
 
+.menu__item-link {
+  font-size: 1.6rem;
+}
+
 .container--why {
-  padding: 96px 0px 107px;
+  padding: 9.6rem 0px 10.7rem;
   position: relative;
 }
 .container--why::after {
@@ -222,26 +246,26 @@ input, button {
   transform: rotate(-20deg);
   width: 0;
   height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-bottom: 35px solid #e01f3d;
+  border-left: 2rem solid transparent;
+  border-right: 2rem solid transparent;
+  border-bottom: 3.5rem solid #e01f3d;
 }
 
 .why__title {
   text-transform: uppercase;
-  font-size: 48px;
+  font-size: 4.8rem;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 4px;
+  margin-bottom: 0.4rem;
 }
 
 .why__subtitle {
   color: #666666;
   text-align: center;
-  width: 571px;
-  font-size: 18px;
+  width: 57rem;
+  font-size: 1.8rem;
   line-height: 1.2;
-  margin: 0 auto 57px;
+  margin: 0 auto 5.7rem;
 }
 
 .why__list {
@@ -253,7 +277,7 @@ input, button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 313px;
+  width: 31.3rem;
   position: relative;
 }
 .why__item::after {
@@ -267,11 +291,11 @@ input, button {
 }
 
 .why__item-logo {
-  width: 125px;
-  height: 125px;
+  width: 12.5rem;
+  height: 12.5rem;
   background: #f5f5f5;
   border-radius: 50%;
-  margin-bottom: 28px;
+  margin-bottom: 2.8rem;
 }
 
 .why__item-pic {
@@ -280,9 +304,9 @@ input, button {
 }
 
 .why__item-title {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: bold;
-  margin-bottom: 12px;
+  margin-bottom: 1.2rem;
 }
 
 .why__item-text {
@@ -292,7 +316,7 @@ input, button {
 }
 
 .container--reviews {
-  padding: 68px 81px 66px;
+  padding: 6.8px 8rem 6.6rem;
   position: relative;
 }
 .container--reviews::after {
@@ -300,30 +324,30 @@ input, button {
   display: block;
   position: absolute;
   background: #999999;
-  width: 34px;
-  height: 34px;
+  width: 3.4rem;
+  height: 3.4rem;
   border-radius: 50%;
   left: 4%;
   top: 97.5%;
 }
 
 .reviews__title {
-  font-size: 48px;
+  font-size: 4.8rem;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 44px;
+  margin-bottom: 4.4rem;
 }
 
 .reviews__content {
-  width: 940px;
-  min-height: 345px;
+  width: 94rem;
+  min-height: 34.5rem;
   background: #f5f5f5;
-  padding: 50px 110px 35px 45px;
+  padding: 5rem 11rem 3.5rem 4.5rem;
   display: flex;
   justify-content: flex-start;
   position: relative;
-  margin-bottom: 27.7px;
+  margin-bottom: 2.77rem;
 }
 .reviews__content::before {
   content: "";
@@ -338,9 +362,9 @@ input, button {
 }
 
 .reviews__content-logo {
-  width: 253px;
-  height: 260px;
-  margin-right: 20px;
+  width: 25.3rem;
+  height: 26rem;
+  margin-right: 2rem;
 }
 
 .reviews__content-pic {
@@ -356,20 +380,20 @@ input, button {
 }
 
 .reviews__info-title {
-  font-size: 27px;
+  font-size: 2.7rem;
   font-weight: bold;
-  margin-bottom: 32px;
+  margin-bottom: 3.2rem;
 }
 
 .reviews__info-text {
-  font-size: 18px;
+  font-size: 1.8rem;
   color: #666;
-  width: 511px;
-  margin-bottom: 32px;
+  width: 51rem;
+  margin-bottom: 3.2rem;
 }
 
 .reviews__info-name {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: bold;
 }
 
@@ -379,13 +403,13 @@ input, button {
 }
 
 .reviews__item {
-  width: 72.7px;
-  height: 72.7px;
+  width: 7.27rem;
+  height: 7.27rem;
   border-radius: 50%;
   border: 6px solid transparent;
   overflow: hidden;
   position: relative;
-  margin-right: 11.7px;
+  margin-right: 1.17rem;
 }
 .reviews__item:last-child {
   margin-right: 0;
@@ -417,7 +441,7 @@ input, button {
 }
 
 .fixed-menu__item {
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
 }
 .fixed-menu__item--active .fixed-menu__link {
   border-color: #e42424;
@@ -427,8 +451,8 @@ input, button {
 }
 
 .fixed-menu__link {
-  width: 16px;
-  height: 16px;
+  width: 1.6rem;
+  height: 1.6rem;
   border-radius: 50%;
   border: 1px solid transparent;
   display: block;
@@ -436,8 +460,8 @@ input, button {
 }
 .fixed-menu__link::before {
   content: "";
-  width: 6px;
-  height: 6px;
+  width: 0.6rem;
+  height: 0.6rem;
   border-radius: 50%;
   background: #999999;
   position: absolute;
@@ -452,16 +476,16 @@ input, button {
 }
 
 .container--feedback {
-  padding: 85px 0px 90px;
+  padding: 8.5rem 0rem 9rem;
 }
 
 .feedback__title {
   text-transform: uppercase;
   color: #fff;
-  font-size: 48px;
+  font-size: 4.8rem;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 54px;
+  margin-bottom: 5.4rem;
 }
 
 .feedback__form {
@@ -470,7 +494,7 @@ input, button {
 
 .feedback__form-col {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 2rem;
 }
 .feedback__form-col:last-child {
   margin-right: 0;
@@ -478,12 +502,12 @@ input, button {
 
 .feedback__form-row {
   display: flex;
-  margin-bottom: 18px;
+  margin-bottom: 1.8rem;
 }
 
 .feedback__form-block {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 2rem;
 }
 .feedback__form-block:last-child {
   margin-right: 0;
@@ -491,7 +515,7 @@ input, button {
 
 .feedback__form-title {
   color: #f8faf9;
-  margin-bottom: 6px;
+  margin-bottom: 0.6rem;
 }
 
 .feedback__form-input {
@@ -501,9 +525,9 @@ input, button {
   border: solid 3px transparent;
 }
 .feedback__form-input--textarea {
-  height: 180px;
+  height: 18rem;
   resize: none;
-  margin-bottom: 3px;
+  margin-bottom: 0.3rem;
 }
 .feedback__form-input:focus {
   border-color: #e01f3d;
@@ -513,10 +537,10 @@ input, button {
 .feedback__form-controls {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 9px;
+  margin-bottom: 0.9rem;
 }
 .feedback__form-controls--checkbox {
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
 }
 .feedback__form-controls:last-child {
   margin-bottom: 0;
@@ -580,15 +604,15 @@ input, button {
 }
 
 .container--team {
-  padding: 72px 0px 78px;
+  padding: 7.2rem 0px 7.8rem;
 }
 
 .team__title {
-  font-size: 48px;
+  font-size: 4.8rem;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 57px;
+  margin-bottom: 5.7rem;
 }
 
 .members__list {
@@ -598,18 +622,19 @@ input, button {
 .members__item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 2rem;
+  flex: 1;
 }
 .members__item:last-child {
   margin-right: 0;
 }
 
 .members__img {
-  width: 220px;
-  height: 288px;
-  margin-bottom: 27px;
+  width: 22rem;
+  height: 28.8rem;
+  margin-bottom: 2.7rem;
 }
 
 .members__pic {
@@ -628,17 +653,17 @@ input, button {
 
 .members__info-name {
   font-weight: bold;
-  margin-bottom: 13px;
+  margin-bottom: 1.3rem;
 }
 
 .members__info-occ {
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #281e1e;
-  margin-bottom: 18px;
+  margin-bottom: 1.8rem;
 }
 
 .members__info-desc {
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #666666;
   text-align: center;
 }
@@ -648,7 +673,7 @@ input, button {
 }
 
 .container__how {
-  padding: 68px 0px 94px;
+  padding: 6.8rem 0px 9.4rem;
   position: relative;
 }
 .container__how::after {
@@ -658,15 +683,15 @@ input, button {
 }
 
 .how__title {
-  font-size: 48px;
+  font-size: 4.8rem;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 51px;
+  margin-bottom: 5rem;
 }
 
 .container--footer {
-  padding: 28px 0px;
+  padding: 2.8rem 0rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -677,14 +702,14 @@ input, button {
 }
 
 .socials__item {
-  margin-right: 10px;
+  margin-right: 1rem;
 }
 
 .socials__link {
   display: block;
   text-decoration: none;
-  width: 36px;
-  height: 36px;
+  width: 3.6rem;
+  height: 3.6rem;
   background: center center no-repeat;
   position: relative;
 }
@@ -696,8 +721,8 @@ input, button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 36px;
-  height: 36px;
+  width: 3.6rem;
+  height: 3.6rem;
   background: url(/img/pics/socials/social_sprites.png) -178px;
 }
 .socials__item--icon--tg .socials__link:hover::after {
@@ -711,8 +736,8 @@ input, button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 36px;
-  height: 36px;
+  width: 3.6rem;
+  height: 3.6rem;
   background: url(/img/pics/socials/social_sprites.png) -122px;
 }
 .socials__item--icon--vk .socials__link:hover::after {
@@ -726,8 +751,8 @@ input, button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 36px;
-  height: 36px;
+  width: 3.6rem;
+  height: 3.6rem;
   background: url(/img/pics/socials/social_sprites.png) -10px;
 }
 .socials__item--icon--fb .socials__link:hover::after {
@@ -741,8 +766,8 @@ input, button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 36px;
-  height: 36px;
+  width: 3.6rem;
+  height: 3.6rem;
   background: url(/img/pics/socials/social_sprites.png) -66px;
 }
 .socials__item--icon--insta .socials__link:hover::after {

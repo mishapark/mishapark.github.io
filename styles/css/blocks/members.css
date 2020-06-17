@@ -5,18 +5,19 @@
 .members__item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 2rem;
+  flex: 1;
 }
 .members__item:last-child {
   margin-right: 0;
 }
 
 .members__img {
-  width: 220px;
-  height: 288px;
-  margin-bottom: 27px;
+  width: 22rem;
+  height: 28.8rem;
+  margin-bottom: 2.7rem;
 }
 
 .members__pic {
@@ -35,17 +36,17 @@
 
 .members__info-name {
   font-weight: bold;
-  margin-bottom: 13px;
+  margin-bottom: 1.3rem;
 }
 
 .members__info-occ {
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #281e1e;
-  margin-bottom: 18px;
+  margin-bottom: 1.8rem;
 }
 
 .members__info-desc {
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #666666;
   text-align: center;
 }

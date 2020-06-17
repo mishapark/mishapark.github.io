@@ -1,5 +1,5 @@
 .container--reviews {
-    padding: 68px 81px 66px;
+    padding: 6.8px 8rem 6.6rem;
     position: relative;
 
     &::after {
@@ -7,29 +7,29 @@
         display: block;
         position: absolute;
         background: #999999;
-        width: 34px;
-        height: 34px;
+        width: 3.4rem;
+        height: 3.4rem;
         border-radius: 50%;
         left: 4%;
         top: 97.5%;
     }
 }
 .reviews__title {
-    font-size: 48px;
+    font-size: 4.8rem;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 44px;
+  margin-bottom: 4.4rem;
 }
 .reviews__content {
-    width: 940px;
-    min-height: 345px;
+    width: 94rem;
+    min-height: 34.5rem;
     background: #f5f5f5;
-    padding: 50px 110px 35px 45px;
+    padding: 5rem 11rem 3.5rem 4.5rem;
     display: flex;
     justify-content: flex-start;
     position: relative;
-    margin-bottom: 27.7px;
+    margin-bottom: 2.77rem;
     &::before {
         content: '';
         display: block;
@@ -43,9 +43,9 @@
     }
 }
 .reviews__content-logo {
-    width: 253px;
-    height: 260px;
-    margin-right: 20px;
+    width: 25.3rem;
+    height: 26rem;
+    margin-right: 2rem;
 }
 .reviews__content-pic{
     width: 100%;
@@ -58,18 +58,18 @@
     justify-content: flex-start;
 }
 .reviews__info-title {
-    font-size: 27px;
+    font-size: 2.7rem;
   font-weight: bold;
-  margin-bottom: 32px;
+  margin-bottom: 3.2rem;
 }
 .reviews__info-text {
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #666;
-    width: 511px;
-    margin-bottom: 32px;
+    width: 51rem;
+    margin-bottom: 3.2rem;
 }
 .reviews__info-name {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 
@@ -80,13 +80,13 @@
     justify-content: center;
 }
 .reviews__item {
-    width: 72.7px;
-    height: 72.7px;
+    width: 7.27rem;
+    height: 7.27rem;
     border-radius: 50%;
     border: 6px solid transparent;
     overflow: hidden;
     position: relative;
-    margin-right: 11.7px;
+    margin-right: 1.17rem;
 
     &:last-child {
         margin-right: 0;

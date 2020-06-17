@@ -1,22 +1,22 @@
 .functions__list {
     display: flex;
     flex-direction: row;
-    margin-top: 108px;
     justify-content: flex-start;
 }
 .functions__item {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-right: 15px;
+    margin-right: 1.5rem;
 }
 .functions__item-pic {
-    width: 44px;
-    height: 44px;
+    width: 4.4rem;
+    height: 4.4rem;
 }
 .functions__item-logo {
-    margin-right: 9px;
+    margin-right: 1rem;
 }
 .functions__item-text {
-    width: 97px;
+    font-size: 1.6rem;
+    width: 9.7rem;
 }

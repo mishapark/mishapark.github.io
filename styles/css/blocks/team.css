@@ -1,11 +1,11 @@
 .container--team {
-  padding: 72px 0px 78px;
+  padding: 7.2rem 0px 7.8rem;
 }
 
 .team__title {
-  font-size: 48px;
+  font-size: 4.8rem;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 57px;
+  margin-bottom: 5.7rem;
 }
