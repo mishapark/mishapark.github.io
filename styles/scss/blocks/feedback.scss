@@ -25,13 +25,17 @@
     font-weight: bold;
     text-align: center;
     margin-bottom: 5.4rem;
+
+    @include tablets {
+        white-space: nowrap;
+    }
 }
 .feedback__form {
     display: flex;
 
     @include tablets {
         flex-direction: column;
-        width: 70%;
+        width: 90%;
     }
     @include phones {
         width: inherit;

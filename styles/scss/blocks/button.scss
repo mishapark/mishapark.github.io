@@ -31,4 +31,8 @@
 }
 .button--section--hero {
     margin-bottom: 10.8rem;
+
+    @include tablets {
+        margin-bottom: 3rem;
+    }
 }
