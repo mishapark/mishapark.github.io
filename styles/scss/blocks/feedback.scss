@@ -13,6 +13,10 @@
         justify-content: center;
         padding: 18.5rem 12rem 19.3rem;
     }
+    @include phones {
+        justify-content: center;
+        padding: 10rem 0rem;
+    }
 }
 .feedback__title {
     text-transform: uppercase;
@@ -27,6 +31,10 @@
 
     @include tablets {
         flex-direction: column;
+        width: 70%;
+    }
+    @include phones {
+        width: inherit;
     }
 }
 .feedback__form-col {
@@ -94,6 +102,9 @@
     }
 
     @include tablets {
+        margin-bottom: 2rem;
+    }
+    @include phones {
         justify-content: center;
     }
 }

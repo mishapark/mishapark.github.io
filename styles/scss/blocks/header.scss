@@ -1,7 +1,7 @@
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 8.2rem;
 }
 .header__logo {
@@ -9,6 +9,7 @@
     width: 41px;
     height: 41px;
     margin-right: 4rem;
+    flex-shrink: 0;
 }
 .header__pic {
     width: 100%;

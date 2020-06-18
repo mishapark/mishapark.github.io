@@ -1,31 +1,22 @@
 @mixin tablets{
-	@media (max-width: 992px) {
-		@content;
-	}
-} 
-
-@mixin smartphones{
-	@media (max-width: 768px) {
+	@media screen and (max-width: 768px) {
         @content;
     }
 } 
 @mixin phones{
-	@media (max-width: 480px) {
+	@media screen and (max-width: 480px) {
         @content;
     }
 } 
 
-@media (max-width: 992px) {
-    html {font-size: 8px;}
-    .container {max-width: 700px;}
-}
- 
+
+
 @media (max-width: 768px) {
-    html {font-size: 6x;}
-    .container {max-width: 450px;}
+    html {font-size: 8px;}
+    .container {max-width: 730px;}
 }
  
 @media (max-width: 480px) {
-    html {font-size: 4x;}
-    .container {max-width: 300px;}
+    html {font-size: 6px;}
+    .container {max-width: 430px;}
 }

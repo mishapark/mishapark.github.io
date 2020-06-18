@@ -18,6 +18,15 @@
         right: 4%;
         top: 97%;
         transform: rotate(40deg);
+
+        @include tablets {
+            top: 98%;
+        }
+    }
+    
+    @include tablets {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -27,6 +36,7 @@
         flex-direction: column;
         text-align: center;
         align-items: center;
+        align-self: center;
     }
 }
 }
@@ -37,6 +47,13 @@
   width: 39.1rem;
   line-height: 1.2;
   margin-bottom: 2rem;
+
+  @include tablets {
+      width: 63rem;
+  }
+  @include phones {
+      width: 50rem;
+  }
 }
 .hero__subtitle {
     font-size: 1.8rem;
@@ -53,7 +70,9 @@
     right: 5%;
     overflow: hidden;
     @include tablets {
-        top: 50%;
+        width: 35rem;
+        height: 35rem;
+        top: 45%;
         left: 50%;
         transform: translate(-50%, -93%);
     }

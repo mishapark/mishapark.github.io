@@ -12,6 +12,10 @@
         border-radius: 50%;
         left: 4%;
         top: 97.5%;
+
+        @include tablets {
+            top: 98.6%;
+        }
     }
 
     @include tablets {
@@ -41,18 +45,38 @@
         content: '';
         display: block;
         position: absolute;
-        width: 10rem;
-        height: 10rem;
+        width: 8rem;
+        height: 8rem;
         border-radius: 50%;
         background: #fff;
-        top: -16%;
+        top: -14%;
         left: 45%;
+
+        @include tablets {
+            top: -11%;
+        }
+    }
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+        width: 78rem;
+    }
+    @include phones {
+        width: 60rem;
     }
 }
 .reviews__content-logo {
     width: 25.3rem;
     height: 26rem;
     margin-right: 2rem;
+
+    @include tablets {
+        width: 13rem;
+        height: 13rem;
+    }
 }
 .reviews__content-pic{
     width: 100%;
@@ -63,6 +87,10 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+
+    @include tablets {
+        text-align: center;
+    }
 }
 .reviews__info-title {
     font-size: 2.7rem;

@@ -18,3 +18,29 @@
     text-align: center;
     margin-bottom: 5rem;
 }
+
+.how__decor{
+    position: absolute;
+    bottom: -3%;
+    right: 4%;
+    transform: rotate(-20deg);
+}
+.pentagon {
+    width: 49px;
+    position: relative;
+    border-width: 25px 10px 0;
+    border-style: solid;
+    border-color: #e01f3d transparent;
+}
+
+.pentagon:before {
+    content:"";
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: -44px;
+    left: -10px;
+    border-width: 0 25px 20px;
+    border-style: solid;
+    border-color: transparent transparent #e01f3d;
+}

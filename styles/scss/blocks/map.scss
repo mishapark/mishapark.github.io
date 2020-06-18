@@ -1,3 +1,10 @@
 .map {
     position: relative;
 }
+.map__img {
+    overflow: hidden;
+    height: inherit;
+}
+.map__pic {
+    transform: scale(2.5);
+}

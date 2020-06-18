@@ -40,6 +40,12 @@
 .why__list {
     display: flex;
     justify-content: space-between;
+
+    @include phones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .why__item {
     display: flex;
@@ -50,8 +56,9 @@
     &::after {
         content: url(/img/pics/1.png);
         position: absolute;
-        left: 100%;
+        right: -16%;
         top: 20%;
+        transform: translateX(50%);
     }
     &:last-child::after {
         content: none;
@@ -61,6 +68,9 @@
         &::after {
             display: none;
         }
+    }
+    @include phones {
+        flex-direction: row;
     }
 }
 .why__item-logo {
@@ -74,13 +84,15 @@
     width: 50%;
     transform: translate(50%, 50%);
 }
+.why__item-content {
+    text-align: center;
+}
 .why__item-title{
     font-size: 2.4rem;
   font-weight: bold;
   margin-bottom: 1.2rem;
 }
 .why__item-text {
-    text-align: center;
     color: #666666;
     line-height: 1.2;
 }

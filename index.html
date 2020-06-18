@@ -16,10 +16,6 @@
                         <img src="./img/icons/logo.svg" alt="" class="header__pic">
                     </a>
                     <nav class="header__menu">
-                        <input id="menu__toggle" type="checkbox" class="menu__input">
-                        <label for="menu__toggle" class="menu__btn">
-                            <span></span>
-                        </label>
                         <ul class="menu__list">
                             <li class="menu__item">
                                 <a href="" class="menu__item-link">О нас</a>
@@ -47,6 +43,12 @@
                     <address class="contacts">
                         <a href="tel.+78009039090" class="contacts__phone">8 800 903 90 90</a>
                     </address>
+                    <div class="hamburger">
+                        <input id="menu__toggle" type="checkbox" class="menu__input">
+                        <label for="menu__toggle" class="menu__btn">
+                            <span></span>
+                        </label>
+                    </div>
                 </div>
                 <div class="hero__title-area">
                     <h1 class="hero__title">Беспроводные наушники Beats Solo 3</h1>
@@ -79,27 +81,33 @@
                         <div class="why__item-logo">
                             <img src="./img/icons/battery.svg" alt="" class="why__item-pic">
                         </div>
-                        <div class="why__item-title">40 часов работы</div>
-                        <div class="why__item-text">
-                            <p>Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день.</p>
+                        <div class="why__item-content">
+                            <div class="why__item-title">40 часов работы</div>
+                            <div class="why__item-text">
+                                <p>Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день.</p>
+                            </div>
                         </div>
                     </li>
                     <li class="why__item">
                         <div class="why__item-logo">
                             <img src="./img/icons/sound.svg" alt="" class="why__item-pic">
                         </div>
-                        <div class="why__item-title">Фирменное звучание</div>
-                        <div class="why__item-text">
-                            <p>Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились.</p>
+                        <div class="why__item-content">
+                            <div class="why__item-title">Фирменное звучание</div>
+                            <div class="why__item-text">
+                                <p>Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились.</p>
+                            </div>
                         </div>
                     </li>
                     <li class="why__item">
                         <div class="why__item-logo">
                             <img src="./img/icons/time.svg" alt="" class="why__item-pic">
                         </div>
-                        <div class="why__item-title">Быстрая зарядка</div>
-                        <div class="why__item-text">
-                            <p>Благодаря технологии Fast Fuel всего через 5 минут зарядки вы сможете слушать музыку ещё 3 часа.</p>
+                        <div class="why__item-content">
+                            <div class="why__item-title">Быстрая зарядка</div>
+                            <div class="why__item-text">
+                                <p>Благодаря технологии Fast Fuel всего через 5 минут зарядки вы сможете слушать музыку ещё 3 часа.</p>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -191,6 +199,9 @@
         <section class="how">
             <div class="container container__how">
                 <h2 class="how__title">Как мы работаем</h2>
+                <div class="how__decor">
+                    <div class="pentagon"></div>
+                </div>
             </div>
         </section>
         <section class="feedback">
@@ -268,10 +279,8 @@
             </div>
         </section>
         <section class="map">
-            <div class="container container--map">
-                <div class="map__img">
-                    <img src="/img/pics/map.png" alt="" class="map__pic">
-                </div>
+            <div class="map__img">
+                <img src="/img/pics/map.png" alt="" class="map__pic">
             </div>
             <div class="footer"> 
                 <div class="container container--footer">
