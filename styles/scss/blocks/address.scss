@@ -1,4 +1,6 @@
 .contacts {
+    padding-top: 4px;
+
     @include tablets {
         display: none;
       }

@@ -2,15 +2,17 @@
     display: flex;
     cursor: pointer;
     user-select: none;
-    margin-right: 20px;
+    margin-right: 3.6rem;
 
     &:last-child {
         margin-right: 0;
     }
+
+    @include tablets {
+        margin-right: 2.6rem;
+    }
 }
-.radio__visible {
-    margin-right: 8px;
-}
+
 .radio--checkbox {
     .radio__visible {
         border-radius: 0;
@@ -40,6 +42,7 @@
     position: relative;
     border-radius: 50%;
     background: #fff;
+    margin-right: 0.8rem;
 
     &::before {
         content: "";

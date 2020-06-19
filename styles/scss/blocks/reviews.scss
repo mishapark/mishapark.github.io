@@ -1,5 +1,8 @@
 .container--reviews {
-    padding: 6.8px 8rem 6.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
 
     &::after {
@@ -11,18 +14,11 @@
         height: 3.4rem;
         border-radius: 50%;
         left: 4%;
-        top: 97.5%;
+        top: 98%;
 
         @include tablets {
             top: 98.6%;
         }
-    }
-
-    @include tablets {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 }
 .reviews__title {
@@ -31,6 +27,10 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 4.4rem;
+
+  @include tablets {
+      margin-bottom: 3.4rem;
+  }
 }
 .reviews__content {
     width: 94rem;
@@ -40,16 +40,16 @@
     display: flex;
     justify-content: flex-start;
     position: relative;
-    margin-bottom: 2.77rem;
+    margin-bottom: 2.7rem;
     &::before {
         content: '';
         display: block;
         position: absolute;
         width: 8rem;
-        height: 8rem;
+        height: 7rem;
         border-radius: 50%;
         background: #fff;
-        top: -14%;
+        top: -13%;
         left: 50%;
         transform: translateX(-50%);
 
@@ -64,6 +64,7 @@
         padding-left: 2rem;
         padding-right: 2rem;
         width: 78rem;
+        margin-bottom: 3rem;
     }
     @include phones {
         width: 60rem;
@@ -78,6 +79,8 @@
     @include tablets {
         width: 13rem;
         height: 13rem;
+        margin-bottom: 1.8rem;
+        margin-right: 0;
     }
 }
 .reviews__content-pic{
@@ -86,6 +89,7 @@
     object-fit: cover;
 }
 .reviews__content-info {
+    padding-top: 0.8rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -98,12 +102,21 @@
 .reviews__info-title {
     font-size: 2.7rem;
   font-weight: bold;
-  margin-bottom: 3.2rem;
+  margin-bottom: 2rem;
+
+  @include tablets {
+      margin-bottom: 1.7rem;
+  }
 }
 .reviews__info-text {
     font-size: 1.8rem;
     color: #666;
-    margin-bottom: 3.2rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.22;
+    
+    @include tablets {
+        margin-bottom: 3rem;
+    }
 }
 .reviews__info-name {
     font-size: 1.8rem;
@@ -117,13 +130,12 @@
     justify-content: center;
 }
 .reviews__item {
-    width: 7.27rem;
-    height: 7.27rem;
+    width: 7.8rem;
+    height: 7.8rem;
     border-radius: 50%;
     border: 6px solid transparent;
     overflow: hidden;
     position: relative;
-    margin-right: 1.17rem;
 
     &:last-child {
         margin-right: 0;
@@ -131,6 +143,10 @@
 
     &--active {
         border-color: #e01f3d;
+    }
+
+    @include tablets {
+        margin-right: 0.8rem;
     }
 }
 .reviews__item-link {

@@ -83,6 +83,9 @@ input, button {
     max-width: 430px;
   }
 }
+.contacts {
+  padding-top: 4px;
+}
 @media screen and (max-width: 768px) {
   .contacts {
     display: none;
@@ -128,15 +131,20 @@ input, button {
 }
 
 .button--section--feedback {
-  margin-right: 1.7rem;
+  margin-right: 2.7rem;
+}
+@media screen and (max-width: 768px) {
+  .button--section--feedback {
+    margin-right: 5rem;
+  }
 }
 
 .button--section--hero {
-  margin-bottom: 10.8rem;
+  margin-bottom: 9.1rem;
 }
 @media screen and (max-width: 768px) {
   .button--section--hero {
-    margin-bottom: 3rem;
+    margin-bottom: 8.7rem;
   }
 }
 
@@ -155,7 +163,7 @@ input, button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-right: 1.5rem;
+  margin-right: 2.7rem;
 }
 
 .functions__item-pic {
@@ -164,7 +172,7 @@ input, button {
 }
 
 .functions__item-logo {
-  margin-right: 1rem;
+  margin-right: 0.7rem;
 }
 
 .functions__item-text {
@@ -183,7 +191,7 @@ input, button {
   display: block;
   width: 41px;
   height: 41px;
-  margin-right: 4rem;
+  margin-right: -1.1rem;
   flex-shrink: 0;
 }
 
@@ -192,9 +200,6 @@ input, button {
   height: 100%;
 }
 
-.header__menu {
-  margin-right: 5rem;
-}
 @media screen and (max-width: 768px) {
   .header__menu {
     margin-right: 0;
@@ -205,7 +210,7 @@ input, button {
   background: #f5f5f5;
 }
 .hero .container--hero {
-  padding: 2.3rem 5.2rem 3.6rem 8rem;
+  padding: 2.3rem 7.9rem 3.6rem 8rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -216,21 +221,23 @@ input, button {
   display: block;
   position: absolute;
   background: #999999;
-  height: 5rem;
-  width: 1.5rem;
-  right: 4%;
-  top: 97%;
-  transform: rotate(40deg);
+  height: 4.3rem;
+  width: 1rem;
+  right: 13%;
+  top: 97.5%;
+  transform: rotate(45deg);
 }
 @media screen and (max-width: 768px) {
   .hero .container--hero::after {
     top: 98%;
+    right: 15%;
   }
 }
 @media screen and (max-width: 768px) {
   .hero .container--hero {
     padding-left: 0;
     padding-right: 0;
+    padding-top: 1.7rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -239,7 +246,6 @@ input, button {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    align-self: center;
   }
 }
 
@@ -254,6 +260,7 @@ input, button {
 @media screen and (max-width: 768px) {
   .hero__title {
     width: 63rem;
+    margin-bottom: 1rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -265,7 +272,12 @@ input, button {
 .hero__subtitle {
   font-size: 1.8rem;
   width: 32rem;
-  margin-bottom: 5.3rem;
+  margin-bottom: 3.5rem;
+}
+@media screen and (max-width: 768px) {
+  .hero__subtitle {
+    margin-bottom: 2rem;
+  }
 }
 
 .hero__img {
@@ -273,15 +285,15 @@ input, button {
   height: 48.7rem;
   border-radius: 50%;
   position: absolute;
-  top: 18%;
-  right: 5%;
+  top: 20%;
+  right: 9%;
   overflow: hidden;
 }
 @media screen and (max-width: 768px) {
   .hero__img {
-    width: 50rem;
-    height: 50rem;
-    top: 53%;
+    width: 35rem;
+    height: 35rem;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -93%);
   }
@@ -304,7 +316,7 @@ input, button {
   justify-content: space-between;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 5px;
+  padding-top: 10px;
 }
 @media screen and (max-width: 768px) {
   .menu__list {
@@ -313,41 +325,6 @@ input, button {
   .menu__list .menu__input:checked ~ .menu__list {
     display: block;
   }
-}
-
-.menu__input {
-  display: none;
-}
-
-.menu__btn {
-  display: none;
-}
-@media screen and (max-width: 768px) {
-  .menu__btn {
-    display: flex;
-    align-items: center;
-    width: 24px;
-    height: 22px;
-    cursor: pointer;
-    position: relative;
-  }
-}
-.menu__btn span, .menu__btn span::before, .menu__btn span::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  background: #000;
-  border-radius: 10px;
-}
-.menu__btn span::before {
-  content: "";
-  top: -7px;
-}
-.menu__btn span::after {
-  content: "";
-  top: 7px;
 }
 
 .menu__item {
@@ -364,7 +341,9 @@ input, button {
 }
 
 .container--why {
-  padding: 9.6rem 0px 10.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
 }
 .container--why::after {
@@ -372,20 +351,13 @@ input, button {
   display: block;
   position: absolute;
   left: 4%;
-  top: 97%;
-  transform: rotate(-20deg);
+  top: 97.5%;
+  transform: rotate(-14deg);
   width: 0;
   height: 0;
   border-left: 2rem solid transparent;
   border-right: 2rem solid transparent;
-  border-bottom: 3.5rem solid #e01f3d;
-}
-@media screen and (max-width: 768px) {
-  .container--why {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+  border-bottom: 3.3rem solid #e01f3d;
 }
 
 .why__title {
@@ -421,9 +393,8 @@ input, button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 33%;
+  width: 32%;
   position: relative;
-  margin-right: 5rem;
 }
 .why__item::after {
   content: url(/img/pics/1.png);
@@ -456,6 +427,12 @@ input, button {
   border-radius: 50%;
   margin-bottom: 2.8rem;
 }
+@media screen and (max-width: 768px) {
+  .why__item-logo {
+    margin-right: 1.8rem;
+    margin-bottom: 1.8rem;
+  }
+}
 @media screen and (max-width: 480px) {
   .why__item-logo {
     flex-shrink: 0;
@@ -467,6 +444,11 @@ input, button {
 .why__item-pic {
   width: 50%;
   transform: translate(50%, -8%);
+}
+@media screen and (max-width: 768px) {
+  .why__item-pic {
+    transform: translate(50%, -12%);
+  }
 }
 @media screen and (max-width: 480px) {
   .why__item-pic {
@@ -488,14 +470,27 @@ input, button {
   font-weight: bold;
   margin-bottom: 1.2rem;
 }
+@media screen and (max-width: 768px) {
+  .why__item-title {
+    margin-bottom: 1rem;
+  }
+}
 
 .why__item-text {
   color: #666666;
   line-height: 1.2;
 }
+@media screen and (max-width: 768px) {
+  .why__item-text {
+    line-height: 1.1;
+  }
+}
 
 .container--reviews {
-  padding: 6.8px 8rem 6.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
 .container--reviews::after {
@@ -507,19 +502,11 @@ input, button {
   height: 3.4rem;
   border-radius: 50%;
   left: 4%;
-  top: 97.5%;
+  top: 98%;
 }
 @media screen and (max-width: 768px) {
   .container--reviews::after {
     top: 98.6%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .container--reviews {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 }
 
@@ -530,6 +517,11 @@ input, button {
   text-transform: uppercase;
   margin-bottom: 4.4rem;
 }
+@media screen and (max-width: 768px) {
+  .reviews__title {
+    margin-bottom: 3.4rem;
+  }
+}
 
 .reviews__content {
   width: 94rem;
@@ -539,17 +531,17 @@ input, button {
   display: flex;
   justify-content: flex-start;
   position: relative;
-  margin-bottom: 2.77rem;
+  margin-bottom: 2.7rem;
 }
 .reviews__content::before {
   content: "";
   display: block;
   position: absolute;
   width: 8rem;
-  height: 8rem;
+  height: 7rem;
   border-radius: 50%;
   background: #fff;
-  top: -14%;
+  top: -13%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -565,6 +557,7 @@ input, button {
     padding-left: 2rem;
     padding-right: 2rem;
     width: 78rem;
+    margin-bottom: 3rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -583,6 +576,8 @@ input, button {
   .reviews__content-logo {
     width: 13rem;
     height: 13rem;
+    margin-bottom: 1.8rem;
+    margin-right: 0;
   }
 }
 
@@ -593,6 +588,7 @@ input, button {
 }
 
 .reviews__content-info {
+  padding-top: 0.8rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -607,13 +603,24 @@ input, button {
 .reviews__info-title {
   font-size: 2.7rem;
   font-weight: bold;
-  margin-bottom: 3.2rem;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .reviews__info-title {
+    margin-bottom: 1.7rem;
+  }
 }
 
 .reviews__info-text {
   font-size: 1.8rem;
   color: #666;
-  margin-bottom: 3.2rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.22;
+}
+@media screen and (max-width: 768px) {
+  .reviews__info-text {
+    margin-bottom: 3rem;
+  }
 }
 
 .reviews__info-name {
@@ -627,19 +634,23 @@ input, button {
 }
 
 .reviews__item {
-  width: 7.27rem;
-  height: 7.27rem;
+  width: 7.8rem;
+  height: 7.8rem;
   border-radius: 50%;
   border: 6px solid transparent;
   overflow: hidden;
   position: relative;
-  margin-right: 1.17rem;
 }
 .reviews__item:last-child {
   margin-right: 0;
 }
 .reviews__item--active {
   border-color: #e01f3d;
+}
+@media screen and (max-width: 768px) {
+  .reviews__item {
+    margin-right: 0.8rem;
+  }
 }
 
 .reviews__item-link {
@@ -705,21 +716,18 @@ input, button {
 }
 
 .container--feedback {
-  padding: 8.5rem 0rem 9rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 @media screen and (max-width: 768px) {
   .container--feedback {
-    justify-content: center;
     padding: 18.5rem 12rem 19.3rem;
   }
 }
 @media screen and (max-width: 480px) {
   .container--feedback {
-    justify-content: center;
     padding: 10rem 0rem;
   }
 }
@@ -730,11 +738,12 @@ input, button {
   font-size: 4.8rem;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 5.4rem;
+  margin-bottom: 4rem;
 }
 @media screen and (max-width: 768px) {
   .feedback__title {
     white-space: nowrap;
+    margin-bottom: 2.3rem;
   }
 }
 
@@ -744,7 +753,7 @@ input, button {
 @media screen and (max-width: 768px) {
   .feedback__form {
     flex-direction: column;
-    width: 90%;
+    width: 81%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -768,7 +777,7 @@ input, button {
 
 .feedback__form-row {
   display: flex;
-  margin-bottom: 1.8rem;
+  margin-bottom: 1rem;
 }
 
 .feedback__form-block {
@@ -797,12 +806,17 @@ input, button {
 }
 @media screen and (max-width: 768px) {
   .feedback__form-input--textarea {
-    height: 13rem;
+    height: 8rem;
   }
 }
 .feedback__form-input:focus {
   border-color: #e01f3d;
   outline: none;
+}
+@media screen and (max-width: 768px) {
+  .feedback__form-input {
+    padding: 0.4rem 1.1rem;
+  }
 }
 
 .feedback__form-controls {
@@ -810,21 +824,21 @@ input, button {
   flex-wrap: wrap;
   margin-bottom: 0.9rem;
 }
-.feedback__form-controls--checkbox {
-  margin-bottom: 4rem;
-}
 .feedback__form-controls:last-child {
   margin-bottom: 0;
 }
 @media screen and (max-width: 768px) {
   .feedback__form-controls {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 }
 @media screen and (max-width: 480px) {
   .feedback__form-controls {
     justify-content: center;
   }
+}
+.feedback__form-controls--checkbox {
+  margin-bottom: 4rem;
 }
 
 .feedback__buttons {
@@ -837,14 +851,15 @@ input, button {
   cursor: pointer;
   -webkit-user-select: none;
           user-select: none;
-  margin-right: 20px;
+  margin-right: 3.6rem;
 }
 .radio:last-child {
   margin-right: 0;
 }
-
-.radio__visible {
-  margin-right: 8px;
+@media screen and (max-width: 768px) {
+  .radio {
+    margin-right: 2.6rem;
+  }
 }
 
 .radio--checkbox .radio__visible {
@@ -871,6 +886,7 @@ input, button {
   position: relative;
   border-radius: 50%;
   background: #fff;
+  margin-right: 0.8rem;
 }
 .radio__visible::before {
   content: "";
@@ -1029,6 +1045,10 @@ input, button {
   }
 }
 
+.footer__info-item {
+  font-size: 1.8rem;
+}
+
 .socials {
   display: flex;
 }
@@ -1038,6 +1058,11 @@ input, button {
 }
 .socials__item:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .socials__item {
+    margin-right: 0.65rem;
+  }
 }
 
 .socials__link {
@@ -1120,4 +1145,49 @@ input, button {
 
 .map__pic {
   transform: scale(2.5);
+}
+
+.hamburger {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    align-self: center;
+  }
+}
+
+.menu__input {
+  display: none;
+}
+
+.menu__btn {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    width: 24px;
+    height: 22px;
+    cursor: pointer;
+    position: relative;
+  }
+}
+.menu__btn span, .menu__btn span::before, .menu__btn span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: #000;
+  border-radius: 10px;
+}
+.menu__btn span::before {
+  content: "";
+  top: -7px;
+}
+.menu__btn span::after {
+  content: "";
+  top: 7px;
 }

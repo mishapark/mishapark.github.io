@@ -3,43 +3,12 @@
   justify-content: space-between;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 5px;
+  padding-top: 10px;
   @include tablets {
     display: none;
     .menu__input:checked ~ .menu__list{
       display: block;
     }
-  }
-}
-.menu__input {
-  display: none;
-}
-.menu__btn {
-  display: none;
-  @include tablets {
-    display: flex;
-    align-items: center;
-    width: 24px;
-    height: 22px;
-    cursor: pointer;
-    position: relative;
-  }
-  span, span::before, span::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    background: #000;
-    border-radius: 10px;
-  }
-  span::before {
-    content: "";
-    top: -7px;
-  }
-  span::after {
-    content: "";
-    top: 7px;
   }
 }
 .menu__item {

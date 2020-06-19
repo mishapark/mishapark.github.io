@@ -3,14 +3,10 @@
   cursor: pointer;
   -webkit-user-select: none;
           user-select: none;
-  margin-right: 20px;
+  margin-right: 3.6rem;
 }
 .radio:last-child {
   margin-right: 0;
-}
-
-.radio__visible {
-  margin-right: 8px;
 }
 
 .radio--checkbox .radio__visible {
@@ -37,6 +33,7 @@
   position: relative;
   border-radius: 50%;
   background: #fff;
+  margin-right: 0.8rem;
 }
 .radio__visible::before {
   content: "";

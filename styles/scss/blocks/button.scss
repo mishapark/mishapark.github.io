@@ -27,12 +27,16 @@
 
 
 .button--section--feedback {
-    margin-right: 1.7rem;
-}
-.button--section--hero {
-    margin-bottom: 10.8rem;
+    margin-right: 2.7rem;
 
     @include tablets {
-        margin-bottom: 3rem;
+        margin-right: 5rem;
+    }
+}
+.button--section--hero {
+    margin-bottom: 9.1rem;
+
+    @include tablets {
+        margin-bottom: 8.7rem;
     }
 }

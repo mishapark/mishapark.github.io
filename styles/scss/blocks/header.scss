@@ -8,7 +8,7 @@
     display: block;
     width: 41px;
     height: 41px;
-    margin-right: 4rem;
+    margin-right: -1.1rem;
     flex-shrink: 0;
 }
 .header__pic {
@@ -16,7 +16,6 @@
     height: 100%;
 }
 .header__menu {
-    margin-right: 5rem;
     @include tablets {
         margin-right: 0;
     }

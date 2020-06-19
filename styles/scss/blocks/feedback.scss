@@ -3,18 +3,15 @@
     background-color: #171717;
 }
 .container--feedback {
-    padding: 8.5rem 0rem 9rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 
     @include tablets {
-        justify-content: center;
         padding: 18.5rem 12rem 19.3rem;
     }
     @include phones {
-        justify-content: center;
         padding: 10rem 0rem;
     }
 }
@@ -24,10 +21,11 @@
     font-size: 4.8rem;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 5.4rem;
+    margin-bottom: 4rem;
 
     @include tablets {
         white-space: nowrap;
+        margin-bottom: 2.3rem;
     }
 }
 .feedback__form {
@@ -35,7 +33,7 @@
 
     @include tablets {
         flex-direction: column;
-        width: 90%;
+        width: 81%;
     }
     @include phones {
         width: inherit;
@@ -55,7 +53,7 @@
 }
 .feedback__form-row {
     display: flex;
-    margin-bottom: 1.8rem;
+    margin-bottom: 1rem;
 }
 .feedback__form-block {
     flex: 1;
@@ -81,13 +79,17 @@
         margin-bottom: 0.3rem;
         
         @include tablets {
-            height: 13rem;
+            height: 8rem;
         }
     }
 
     &:focus {
         border-color: #e01f3d;
         outline: none;
+    }
+
+    @include tablets {
+        padding: 0.4rem 1.1rem;
     }
 }
 
@@ -96,20 +98,19 @@
     flex-wrap: wrap;
     margin-bottom: 0.9rem;
 
-    &--checkbox {
-        margin-bottom: 4rem;
-
-    }
-
     &:last-child {
         margin-bottom: 0;
     }
 
     @include tablets {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
     @include phones {
         justify-content: center;
+    }
+
+    &--checkbox {
+        margin-bottom: 4rem;
     }
 }
 
