@@ -15,7 +15,7 @@ body {
 }
 
 section {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -45,8 +45,8 @@ ul li {
 .container {
     margin: 0 auto;
     width: 95%;
-    max-width: 110rem;
-    height: inherit;
+    max-width: 94rem;
+    min-height: inherit;
 }
 
 input, button {

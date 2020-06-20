@@ -1,6 +1,6 @@
 .button {
     font-size: 1.6rem;
-    padding: 1.7rem 4.1rem;
+    padding: 17px 41px;
     border-radius: 25.5px;
     text-transform: uppercase;
     border: none;
@@ -32,11 +32,15 @@
     @include tablets {
         margin-right: 5rem;
     }
+
+    @include phones {
+        margin-right: 4rem;
+    }
 }
 .button--section--hero {
     margin-bottom: 9.1rem;
 
     @include tablets {
-        margin-bottom: 8.7rem;
+        margin-bottom: 0;
     }
 }

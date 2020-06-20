@@ -16,3 +16,12 @@
     max-width: 430px;
   }
 }
+@media (max-width: 400px) {
+  html {
+    font-size: 7px;
+  }
+
+  .container {
+    max-width: 370px;
+  }
+}

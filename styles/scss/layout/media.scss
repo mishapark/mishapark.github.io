@@ -7,6 +7,11 @@
 	@media screen and (max-width: 480px) {
         @content;
     }
+}
+@mixin mobiles{
+	@media screen and (max-width: 400px) {
+        @content;
+    }
 } 
 
 
@@ -19,4 +24,9 @@
 @media (max-width: 480px) {
     html {font-size: 8px;}
     .container {max-width: 430px;}
+}
+
+@media (max-width: 400px) {
+    html {font-size: 7px;}
+    .container {max-width: 370px;}
 }

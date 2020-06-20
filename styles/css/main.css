@@ -16,7 +16,7 @@ body {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -49,8 +49,8 @@ ul li {
 .container {
   margin: 0 auto;
   width: 95%;
-  max-width: 110rem;
-  height: inherit;
+  max-width: 94rem;
+  min-height: inherit;
 }
 
 input, button {
@@ -83,6 +83,15 @@ input, button {
     max-width: 430px;
   }
 }
+@media (max-width: 400px) {
+  html {
+    font-size: 7px;
+  }
+
+  .container {
+    max-width: 370px;
+  }
+}
 .contacts {
   padding-top: 4px;
 }
@@ -105,7 +114,7 @@ input, button {
 
 .button {
   font-size: 1.6rem;
-  padding: 1.7rem 4.1rem;
+  padding: 17px 41px;
   border-radius: 25.5px;
   text-transform: uppercase;
   border: none;
@@ -138,13 +147,18 @@ input, button {
     margin-right: 5rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .button--section--feedback {
+    margin-right: 4rem;
+  }
+}
 
 .button--section--hero {
   margin-bottom: 9.1rem;
 }
 @media screen and (max-width: 768px) {
   .button--section--hero {
-    margin-bottom: 8.7rem;
+    margin-bottom: 0;
   }
 }
 
@@ -210,7 +224,7 @@ input, button {
   background: #f5f5f5;
 }
 .hero .container--hero {
-  padding: 2.3rem 7.9rem 3.6rem 8rem;
+  padding: 2.3rem 0rem 3.6rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -238,7 +252,17 @@ input, button {
     padding-left: 0;
     padding-right: 0;
     padding-top: 1.7rem;
+    padding-bottom: 0;
   }
+}
+@media screen and (max-width: 480px) {
+  .hero .container--hero {
+    padding-top: 2.7rem;
+  }
+}
+.hero .hero__title-area {
+  position: relative;
+  z-index: 1;
 }
 @media screen and (max-width: 768px) {
   .hero .hero__title-area {
@@ -246,6 +270,7 @@ input, button {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    margin-bottom: 13%;
   }
 }
 
@@ -265,7 +290,9 @@ input, button {
 }
 @media screen and (max-width: 480px) {
   .hero__title {
-    width: 50rem;
+    font-size: 4rem;
+    padding: 0rem 15rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -279,20 +306,23 @@ input, button {
     margin-bottom: 2rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .hero__subtitle {
+    margin-bottom: 3.5rem;
+  }
+}
 
 .hero__img {
-  width: 48.7rem;
-  height: 48.7rem;
+  width: 53%;
   border-radius: 50%;
   position: absolute;
   top: 20%;
-  right: 9%;
+  right: 0%;
   overflow: hidden;
 }
 @media screen and (max-width: 768px) {
   .hero__img {
     width: 35rem;
-    height: 35rem;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -93%);
@@ -300,8 +330,7 @@ input, button {
 }
 @media screen and (max-width: 480px) {
   .hero__img {
-    width: 45rem;
-    height: 45rem;
+    width: 62%;
     top: 50%;
   }
 }
@@ -309,6 +338,7 @@ input, button {
 .hero__pic {
   height: 100%;
   width: 100%;
+  transform: scale(1.02);
 }
 
 .menu__list {
@@ -367,6 +397,12 @@ input, button {
   text-align: center;
   margin-bottom: 0.4rem;
 }
+@media screen and (max-width: 480px) {
+  .why__title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+}
 
 .why__subtitle {
   color: #666666;
@@ -375,6 +411,11 @@ input, button {
   font-size: 1.8rem;
   line-height: 1.2;
   margin: 0 auto 5.7rem;
+}
+@media screen and (max-width: 480px) {
+  .why__subtitle {
+    width: 50rem;
+  }
 }
 
 .why__list {
@@ -416,7 +457,7 @@ input, button {
   .why__item {
     flex-direction: row;
     width: inherit;
-    margin-bottom: 1.5rem;
+    margin-bottom: 4.5rem;
   }
 }
 
@@ -435,6 +476,8 @@ input, button {
 }
 @media screen and (max-width: 480px) {
   .why__item-logo {
+    width: 14.5rem;
+    height: 14.5rem;
     flex-shrink: 0;
     margin-bottom: 0;
     margin-right: 1.7rem;
@@ -452,7 +495,7 @@ input, button {
 }
 @media screen and (max-width: 480px) {
   .why__item-pic {
-    transform: translate(50%, -16%);
+    transform: translate(50%, -11%);
   }
 }
 
@@ -473,6 +516,11 @@ input, button {
 @media screen and (max-width: 768px) {
   .why__item-title {
     margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .why__item-title {
+    margin-bottom: 2rem;
   }
 }
 
@@ -522,6 +570,12 @@ input, button {
     margin-bottom: 3.4rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .reviews__title {
+    font-size: 4rem;
+    margin-bottom: 2.4rem;
+  }
+}
 
 .reviews__content {
   width: 94rem;
@@ -538,17 +592,12 @@ input, button {
   display: block;
   position: absolute;
   width: 8rem;
-  height: 7rem;
-  border-radius: 50%;
+  height: 3.5rem;
+  border-radius: 0 0 8rem 8rem;
   background: #fff;
-  top: -13%;
+  top: 0%;
   left: 50%;
   transform: translateX(-50%);
-}
-@media screen and (max-width: 768px) {
-  .reviews__content::before {
-    top: -11%;
-  }
 }
 @media screen and (max-width: 768px) {
   .reviews__content {
@@ -563,6 +612,8 @@ input, button {
 @media screen and (max-width: 480px) {
   .reviews__content {
     width: 60rem;
+    padding-top: 6.5rem;
+    padding-bottom: 8rem;
   }
 }
 
@@ -578,6 +629,11 @@ input, button {
     height: 13rem;
     margin-bottom: 1.8rem;
     margin-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reviews__content-logo {
+    margin-bottom: 1.3rem;
   }
 }
 
@@ -610,6 +666,12 @@ input, button {
     margin-bottom: 1.7rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .reviews__info-title {
+    font-size: 3rem;
+    margin-bottom: 1.4rem;
+  }
+}
 
 .reviews__info-text {
   font-size: 1.8rem;
@@ -622,10 +684,21 @@ input, button {
     margin-bottom: 3rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .reviews__info-text {
+    line-height: 1.4;
+    margin-bottom: 2rem;
+  }
+}
 
 .reviews__info-name {
   font-size: 1.8rem;
   font-weight: bold;
+}
+@media screen and (max-width: 480px) {
+  .reviews__info-name {
+    font-size: 2.1rem;
+  }
 }
 
 .reviews__list {
@@ -746,6 +819,11 @@ input, button {
     margin-bottom: 2.3rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .feedback__title {
+    font-size: 4rem;
+  }
+}
 
 .feedback__form {
   display: flex;
@@ -779,6 +857,11 @@ input, button {
   display: flex;
   margin-bottom: 1rem;
 }
+@media screen and (max-width: 480px) {
+  .feedback__form-row {
+    margin-bottom: 1.5rem;
+  }
+}
 
 .feedback__form-block {
   flex: 1;
@@ -791,6 +874,11 @@ input, button {
 .feedback__form-title {
   color: #f8faf9;
   margin-bottom: 0.6rem;
+}
+@media screen and (max-width: 480px) {
+  .feedback__form-title {
+    margin-bottom: 0.3rem;
+  }
 }
 
 .feedback__form-input {
@@ -1042,11 +1130,18 @@ input, button {
 @media screen and (max-width: 480px) {
   .footer__info {
     text-align: center;
+    margin-bottom: 1.5rem;
   }
 }
 
 .footer__info-item {
   font-size: 1.8rem;
+}
+@media screen and (max-width: 480px) {
+  .footer__info-item {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .socials {
