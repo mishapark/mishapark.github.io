@@ -36,9 +36,12 @@
     font-size: 4rem;
     margin-bottom: 2.4rem;
 }
+@include mobiles {
+    font-size: 3.6rem;
+  }
 }
 .reviews__content {
-    width: 94rem;
+    width: 100%;
     min-height: 34.5rem;
     background: #f5f5f5;
     padding: 5rem 11rem 3.5rem 4.5rem;
@@ -64,11 +67,9 @@
         align-items: center;
         padding-left: 2rem;
         padding-right: 2rem;
-        width: 78rem;
         margin-bottom: 3rem;
     }
     @include phones {
-        width: 60rem;
         padding-top: 6.5rem;
         padding-bottom: 8rem;
     }

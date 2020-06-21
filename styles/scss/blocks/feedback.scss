@@ -9,7 +9,7 @@
     justify-content: center;
 
     @include tablets {
-        padding: 18.5rem 12rem 19.3rem;
+        padding: 1rem;
     }
     @include phones {
         padding: 10rem 0rem;
@@ -31,16 +31,20 @@
     @include phones {
         font-size: 4rem;
     }
+
+    @include mobiles {
+        font-size: 3.6rem;
+      }
 }
 .feedback__form {
     display: flex;
 
     @include tablets {
         flex-direction: column;
-        width: 81%;
+        width: 46rem;
     }
     @include phones {
-        width: inherit;
+        width: 100%;
     }
 }
 .feedback__form-col {

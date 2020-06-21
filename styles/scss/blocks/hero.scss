@@ -59,13 +59,16 @@
   margin-bottom: 2rem;
 
   @include tablets {
-      width: 63rem;
+      width: 100%;
       margin-bottom: 1rem;
+      padding: 0% 10%;
   }
   @include phones {
       font-size: 4rem;
-      padding: 0rem 15rem;
       margin-bottom: 2rem;
+  }
+  @include mobiles {
+    font-size: 3.6rem;
   }
 }
 .hero__subtitle {

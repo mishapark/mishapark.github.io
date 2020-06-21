@@ -17,6 +17,10 @@
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 5rem;
+
+    @include mobiles {
+        font-size: 3.6rem;
+      }
 }
 
 .how__decor{

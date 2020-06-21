@@ -29,6 +29,9 @@
         font-size: 4rem;
         margin-bottom: 1rem;
     }
+    @include mobiles {
+        font-size: 3.6rem;
+      }
 }
 .why__subtitle {
     color: #666666;
@@ -39,7 +42,10 @@
     margin: 0 auto 5.7rem;
 
     @include phones {
-        width: 50rem;
+        width: 100%;
+    }
+    @include mobiles {
+        margin-bottom: 2rem;;
     }
 }
 .why__list {
@@ -148,5 +154,8 @@
 
     @include tablets {
         line-height: 1.1;
+    }
+    @include mobiles {
+        font-size: 2rem;
     }
 }
