@@ -1,0 +1,25 @@
+.arrows {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.arrow {
+    width: 20px;
+    height: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom-color: #000;
+    border-right-color: #000;
+    border-radius: 0 0 5px 0;
+
+    &--left {
+        transform: rotate(135deg);
+    }
+    &--right {
+        transform: rotate(-45deg);
+    }
+}

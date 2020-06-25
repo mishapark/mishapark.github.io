@@ -92,6 +92,8 @@
     top: 20%;
     right: 0%;
     overflow: hidden;
+    background: #fff;
+    
     @include tablets {
         width: 35rem;
         top: 55%;
@@ -106,5 +108,4 @@
 .hero__pic {
     height: 100%;
     width: 100%;
-    transform: scale(1.02);
 }

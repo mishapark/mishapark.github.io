@@ -6,9 +6,6 @@
   padding-top: 10px;
   @include tablets {
     display: none;
-    .menu__input:checked ~ .menu__list{
-      display: block;
-    }
   }
 }
 .menu__item {
