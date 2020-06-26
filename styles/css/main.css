@@ -1287,11 +1287,11 @@ input, button {
   display: none;
 }
 
-.menu__btn {
+#menu__btn {
   display: none;
 }
 @media screen and (max-width: 768px) {
-  .menu__btn {
+  #menu__btn {
     display: flex;
     align-items: center;
     width: 24px;
@@ -1300,7 +1300,7 @@ input, button {
     position: relative;
   }
 }
-.menu__btn span, .menu__btn span::before, .menu__btn span::after {
+#menu__btn span, #menu__btn span::before, #menu__btn span::after {
   content: "";
   display: block;
   position: absolute;
@@ -1309,16 +1309,16 @@ input, button {
   background: #000;
   border-radius: 10px;
 }
-.menu__btn span::before {
+#menu__btn span::before {
   content: "";
   top: -7px;
 }
-.menu__btn span::after {
+#menu__btn span::after {
   content: "";
   top: 7px;
 }
 
-.hamburger__overlay {
+#hamburger__overlay {
   display: flex;
   position: fixed;
   top: 0;
@@ -1352,14 +1352,14 @@ input, button {
   font-size: 3.6rem;
 }
 
-.hamburger__close {
+#hamburger__close {
   position: absolute;
   top: 3.5%;
   right: 2.5%;
   width: 24px;
   height: 24px;
 }
-.hamburger__close::before, .hamburger__close::after {
+#hamburger__close::before, #hamburger__close::after {
   content: "";
   display: block;
   position: absolute;
@@ -1368,10 +1368,10 @@ input, button {
   background: #fff;
   border-radius: 10px;
 }
-.hamburger__close::before {
+#hamburger__close::before {
   transform: rotate(45deg);
 }
-.hamburger__close::after {
+#hamburger__close::after {
   transform: rotate(-45deg);
 }
 
