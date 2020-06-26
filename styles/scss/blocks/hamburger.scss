@@ -41,7 +41,6 @@
 }
 
 
-
 #hamburger__overlay {
   display: flex;
   position: fixed;
@@ -73,12 +72,19 @@
 .menu__item-link--hamburger{
   font-size: 3.6rem;
 }
-#hamburger__close {
+
+#menu__close {
   position: absolute;
-  top: 3.5%;
+  top: 2.5%;
   right: 2.5%;
   width: 24px;
   height: 24px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+#hamburger__close {
 
   &::before, &::after {
     content: "";
