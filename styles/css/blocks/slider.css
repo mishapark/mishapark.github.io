@@ -61,7 +61,7 @@
 
 .slider__info--title {
   text-transform: uppercase;
-  font-size: 36px;
+  font-size: 3.6rem;
   font-weight: bold;
   margin-bottom: 2.7rem;
 }
@@ -97,8 +97,9 @@
   justify-content: space-between;
   text-align: center;
   width: 75%;
+  align-items: flex-start;
 }
 
 .info--order__item {
-  font-size: 36px;
+  font-size: 3.6rem;
 }

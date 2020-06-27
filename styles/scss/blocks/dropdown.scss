@@ -29,6 +29,7 @@
     display: flex;
     margin-bottom: 3rem;
     align-items: center;
+    min-width: 230px;
 
     &:last-child {
         margin-bottom: 0;
@@ -40,9 +41,10 @@
     margin-right: 2rem;
 }
 .dropdown__item--title{
-    margin-right: 3rem;
     text-align: left;
 }
 .dropdown__item--stat {
     text-align: left;
+    min-width: 50px;
+    margin-left: auto;
 }

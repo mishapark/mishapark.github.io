@@ -24,7 +24,12 @@
     align-items: center;
     height: 100%;
     width: 95%;
-    z-index: 1;
+    z-index: 10;
+
+    @include tablets {
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 .slider__img {
     width: 50%;
@@ -32,14 +37,28 @@
     border-radius: 50%;
     overflow: hidden;
     background: #fff;
+    margin-right: 6rem;
+
+    @include tablets {
+        margin-bottom: 5rem;
+        margin-right: 0;
+    }
 }
 .slider__pic {
     width: 100%;
     height: 100%;
+    transform: scale(0.8);
 }
 .slider__info {
     width: 50%;
     right: 0;
+
+    @include tablets {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .slider__dropdown {
     position: relative;
@@ -55,27 +74,48 @@
             left: 9rem;
         }
     }
+
+    @include tablets {
+        display: none;
+    }
 }
 .slider__info--title {
     text-transform: uppercase;
-    font-size: 36px;
+    font-size: 3.6rem;
     font-weight: bold;
     margin-bottom: 2.7rem;
+
+    @include tablets {
+        text-align: center;
+    }
 }
 .slider__info--subtitle {
     color: #666666;
     margin-bottom: 4.5rem;
     width: 80%;
+
+    @include tablets {
+        text-align: center;
+    }
 }
 .slider__char--list {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     text-align: center;
     margin-bottom: 6.7rem;
-    width: 50%;
+    width: 100%;
+
+    @include tablets {
+        justify-content: center;
+    }
 }
 .char__item {
     text-align: left;
+    margin-right: 7rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
 }
 .char__item--title {
     color: #666666;
@@ -85,10 +125,16 @@
 }
 .slider__info--order {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     text-align: center;
-    width: 75%;
+    width: 100%;
+    align-items: center;
+
+    @include tablets {
+        justify-content: center;
+    }
 }
 .info--order__item {
-    font-size: 36px;
+    font-size: 3.6rem;
+    margin-right: 2rem;
 }

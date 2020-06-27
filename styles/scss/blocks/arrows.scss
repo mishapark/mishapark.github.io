@@ -5,6 +5,12 @@
     height: 100%;
     width: 100%;
     position: absolute;
+
+    @include tablets {
+        height: 0;
+        top: 25%;
+        width: 65%;
+    }
 }
 .arrow {
     width: 20px;
