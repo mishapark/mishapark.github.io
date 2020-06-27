@@ -3,13 +3,14 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    width: 100%;
+    width: 210%;
     position: absolute;
+    top: 0;
 
     @include tablets {
         height: 0;
-        top: 25%;
-        width: 65%;
+        top: 50%;
+        width: 110%;
     }
 }
 .arrow {
