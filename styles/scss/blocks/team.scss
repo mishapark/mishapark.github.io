@@ -1,5 +1,9 @@
 .container--team{
-    padding: 7.2rem 0px 7.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 10%;
 }
 .team__title{
     font-size: 4.8rem;
@@ -11,4 +15,7 @@
     @include mobiles {
         font-size: 3.6rem;
       }
+}
+.team__members {
+    width: 100%;
 }

@@ -1,5 +1,6 @@
 .members__list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .members__item {
@@ -14,17 +15,21 @@
   margin-right: 0;
 }
 
+.members__item.is-active .members__link::after {
+  transform: rotate(180deg);
+}
+
 .members__img {
   width: 22rem;
   height: 28.8rem;
   margin-bottom: 2.7rem;
+  overflow: hidden;
 }
 
 .members__pic {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  overflow: hidden;
 }
 
 .members__info {
@@ -32,11 +37,25 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s;
 }
 
-.members__info-name {
+.members__link {
   font-weight: bold;
   margin-bottom: 1.3rem;
+}
+.members__link::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 3px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 4.5px 0px 4.5px;
+  border-color: #e01f3c transparent transparent transparent;
 }
 
 .members__info-occ {

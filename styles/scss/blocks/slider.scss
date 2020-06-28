@@ -24,9 +24,9 @@ width: 48%;
 
 &--left {
     position: relative;
-    margin-bottom: 5rem;
     @include tablets {
         width: 70%;
+        margin-bottom: 5rem;
     }
 }
 
