@@ -5,6 +5,7 @@
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
 
     &::after {
         content: "";
@@ -88,7 +89,7 @@ width: 48%;
             background: #6e6e6e;
         }
         .dropdown__menu {
-            left: 9rem;
+            max-height: 100vh;
         }
     }
 

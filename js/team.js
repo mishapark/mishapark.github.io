@@ -23,9 +23,11 @@ team.addEventListener("click", function(e) {
     }
 })
 
-// if (window.matchMedia("(max-width: 768px)").matches) {
-//     let img = document.querySelector(".members__img");
-//     let desc = document.querySelector(".members__info");
+if (window.matchMedia("(max-width: 768px)").matches) {
+    // $(".members__item").each(function() {
+        const memberImg = $(".members__img");
+        const memberInfo = $(".members__info");
 
-//     desc.append(img);
-//   }
+        memberInfo.prepend(memberImg);
+    // })
+  }

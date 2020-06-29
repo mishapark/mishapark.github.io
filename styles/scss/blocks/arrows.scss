@@ -13,9 +13,14 @@
         width: 110%;
     }
 }
-.arrow {
+.arrow__item {
     width: 20px;
     height: 20px;
+
+}
+.arrow {
+    display: block;
+    height: 100%;
     border-width: 2px;
     border-style: solid;
     border-color: transparent;

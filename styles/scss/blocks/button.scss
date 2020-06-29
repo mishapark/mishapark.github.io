@@ -10,6 +10,7 @@
 .button--theme--red {
     background: #e01f3d;
     color: #fff;
+    transition: 0.5s;
 
     &:hover {
         background-color: #ca1b36;
@@ -19,7 +20,8 @@
     background: transparent;
     color: #999999;
     padding: 0;
-
+    transition: 0.5s;
+    
     &:hover {
         color: #e01f3d;
     }
