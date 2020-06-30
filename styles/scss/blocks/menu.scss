@@ -18,4 +18,9 @@
 .menu__item-link {
   font-size: 1.6rem;
   white-space: nowrap;
+  transition: color 0.5s;
+
+  &:hover {
+    color: #e01f3d;
+  }
 }

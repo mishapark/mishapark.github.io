@@ -19,8 +19,9 @@
 {
     position: relative;
 
-    display: block;
+    display: flex;
     overflow: hidden;
+    align-items: center;
 
 
     margin: 0;
@@ -52,9 +53,10 @@
     top: 0;
     left: 0;
 
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
+    align-items: center;
 }
 .slick-track:before,
 .slick-track:after

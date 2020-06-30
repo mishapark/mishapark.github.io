@@ -94,11 +94,16 @@ input, button {
 }
 .contacts {
   padding-top: 4px;
+  transition: color 0.5s, fill 0.5s;
 }
 @media screen and (max-width: 768px) {
   .contacts {
     display: none;
   }
+}
+.contacts:hover {
+  color: #e01f3d;
+  fill: #e01f3d;
 }
 
 .contacts__phone {
@@ -106,10 +111,11 @@ input, button {
   font-style: normal;
   white-space: nowrap;
 }
-.contacts__phone::before {
-  content: url(../../../img/pics/phone.png);
+
+.contacts__img {
+  height: 13px;
+  width: 13px;
   display: inline-block;
-  margin-right: 4px;
 }
 
 .button {
@@ -372,6 +378,10 @@ input, button {
 .menu__item-link {
   font-size: 1.6rem;
   white-space: nowrap;
+  transition: color 0.5s;
+}
+.menu__item-link:hover {
+  color: #e01f3d;
 }
 
 .container--why {
@@ -617,7 +627,7 @@ input, button {
   min-height: 34.5rem;
   background: #f5f5f5;
   padding: 5rem 11rem 3.5rem 4.5rem;
-  display: flex;
+  display: none;
   justify-content: flex-start;
   position: relative;
   margin-bottom: 2.7rem;
@@ -648,6 +658,10 @@ input, button {
     padding-top: 6.5rem;
     padding-bottom: 8rem;
   }
+}
+
+.reviews__content.is-active {
+  display: flex;
 }
 
 .reviews__content-logo {
@@ -750,7 +764,7 @@ input, button {
 .reviews__item:last-child {
   margin-right: 0;
 }
-.reviews__item--active {
+.reviews__item--active, .reviews__item:hover {
   border-color: #e01f3d;
 }
 @media screen and (max-width: 768px) {
