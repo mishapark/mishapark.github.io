@@ -2,15 +2,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
-    width: 210%;
+    left: -3%;
+    width: 106%;
     position: absolute;
-    top: 0;
-
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    
     @include tablets {
-        height: 0;
-        top: 50%;
-        width: 110%;
+        top: 34%;
+        left: auto;
+        width: 70%;
+    }
+
+    @include phones {
+        transform: translateY(0);
+        top: 40vmin;
     }
 }
 .arrow__item {
@@ -18,6 +25,7 @@
     height: 20px;
 
 }
+
 .arrow {
     display: block;
     height: 100%;

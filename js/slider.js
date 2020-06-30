@@ -1,1 +1,1 @@
-$('.container--slider').slick();
+$('.slider__slick').slick();

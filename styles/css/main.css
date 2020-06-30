@@ -1466,6 +1466,14 @@ input, button {
   transform: rotate(29deg);
 }
 
+.slider__slick {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .slider__col {
   width: 48%;
 }
@@ -1474,7 +1482,7 @@ input, button {
 }
 @media screen and (max-width: 768px) {
   .slider__col--left {
-    width: 70%;
+    width: 50%;
     margin-bottom: 5rem;
   }
 }
@@ -1511,8 +1519,7 @@ input, button {
 }
 @media screen and (max-width: 768px) {
   .slider__img {
-    margin-right: 0;
-    margin-left: 10%;
+    margin-left: 0;
   }
 }
 
@@ -1623,16 +1630,24 @@ input, button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
-  width: 210%;
+  left: -3%;
+  width: 106%;
   position: absolute;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
 }
 @media screen and (max-width: 768px) {
   .arrows {
-    height: 0;
-    top: 50%;
-    width: 110%;
+    top: 34%;
+    left: auto;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .arrows {
+    transform: translateY(0);
+    top: 40vmin;
   }
 }
 

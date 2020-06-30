@@ -20,13 +20,21 @@
     }
 }
 
+.slider__slick {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .slider__col {
 width: 48%;
 
 &--left {
     position: relative;
     @include tablets {
-        width: 70%;
+        width: 50%;
         margin-bottom: 5rem;
     }
 }
@@ -60,8 +68,7 @@ width: 48%;
     margin-left: 5%;
 
     @include tablets {
-        margin-right: 0;
-        margin-left: 10%;
+        margin-left: 0;
     }
 }
 .slider__pic {
