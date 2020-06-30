@@ -23,11 +23,24 @@ team.addEventListener("click", function(e) {
     }
 })
 
-if (window.matchMedia("(max-width: 768px)").matches) {
-    // $(".members__item").each(function() {
-        const memberImg = $(".members__img");
-        const memberInfo = $(".members__info");
+// if (window.matchMedia("(max-width: 768px)").matches) {
+//     // $(".members__item").each(function() {
+//         const memberImg = $(".members__img");
+//         const memberInfo = $(".members__info");
 
-        memberInfo.prepend(memberImg);
-    // })
-  }
+//         memberInfo.prepend(memberImg);
+//     // })
+//   }
+
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    // Перебираем все итемы
+    $(".members__item").each(function() {
+        // находим каждый элемент и в каждом из элементов находим сначала картинку
+        // $(this) в данном контексте это каждый из .members__item на текущей итерации
+        var image = $(this).find('.members__img');
+        // потом блок инфо
+        var info = $(this).find('.members__info');
+        // перемещаем картинку в инфо
+        info.prepend(image);
+    })
+}

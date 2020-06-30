@@ -18,6 +18,9 @@
         margin-right: 0;
     }
 
+    @include tablets {
+        margin-bottom: 3rem;
+    }
 }
 .members__item.is-active {
     .members__link::after {
@@ -29,6 +32,10 @@
     height: 28.8rem;
     margin-bottom: 2.7rem;
     overflow: hidden;
+
+    @include tablets {
+        flex-shrink: 0;
+    }
 }
 .members__pic{
     height: 100%;
