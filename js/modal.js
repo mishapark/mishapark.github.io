@@ -10,16 +10,22 @@
     // When the user clicks the button, open the modal 
     btn.addEventListener("click", e => {
         modal.style.display = "flex";
+        $("body").css("height", "100vh");
+        $("body").css("overflow", "hidden")
     })
     
     // When the user clicks on <span> (x), close the modal
     close.addEventListener("click", e => {
         modal.style.display = "none";
+        $("body").css("overflow", "auto");
     })
     
     modal.addEventListener("click", e => {
       if(e.target == modal) {
         modal.style.display = "none";
+        $("body").css("overflow", "auto");
       }
   })
+
+  
     // When the user clicks anywhere outside of the modal, close it
