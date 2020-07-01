@@ -660,7 +660,7 @@ input, button {
   }
 }
 
-.reviews__content.is-active {
+.reviews__content--active {
   display: flex;
 }
 
