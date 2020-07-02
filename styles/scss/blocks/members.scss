@@ -13,6 +13,7 @@
     align-items: center;
     margin-right: 2rem;
     flex: 1;
+    min-height: 48rem;
 
     &:last-child {
         margin-right: 0;
@@ -20,6 +21,8 @@
 
     @include tablets {
         margin-bottom: 3rem;
+        margin-right: 0;
+        min-height: 0;
     }
 }
 .members__item.is-active {
@@ -52,9 +55,14 @@
 
     transition: height 0.5s;
 }
+.members__info--active {
+    height: auto;
+}
 .members__link{
     font-weight: bold;
     margin-bottom: 1.3rem;
+    cursor: pointer;
+    font-size: 16px;
     
     &::after {
         content: "";

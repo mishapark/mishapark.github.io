@@ -84,10 +84,6 @@
     }
 }
 
-.input__error {
-    border-color: #e01f3d;
-}
-
 .feedback__form-input {
     width: 100%;
     border: none;
@@ -112,6 +108,10 @@
     @include tablets {
         padding: 0.4rem 1.1rem;
     }
+}
+
+.input-error {
+    border-color: #e01f3d;
 }
 
 .feedback__form-controls {

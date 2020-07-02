@@ -23,24 +23,22 @@ team.addEventListener("click", function(e) {
     }
 })
 
-// if (window.matchMedia("(max-width: 768px)").matches) {
-//     // $(".members__item").each(function() {
-//         const memberImg = $(".members__img");
-//         const memberInfo = $(".members__info");
-
-//         memberInfo.prepend(memberImg);
-//     // })
-//   }
-
-  if (window.matchMedia("(max-width: 768px)").matches) {
+//следим за изменением размеров окна
+$(window).on('resize', function () {
     // Перебираем все итемы
-    $(".members__item").each(function() {
+    $(".members__item").each(function () {
         // находим каждый элемент и в каждом из элементов находим сначала картинку
         // $(this) в данном контексте это каждый из .members__item на текущей итерации
         var image = $(this).find('.members__img');
         // потом блок инфо
         var info = $(this).find('.members__info');
-        // перемещаем картинку в инфо
-        info.prepend(image);
+        // если ширина окна меньше либо равна 768
+        if ($(window).width() <= 768) {
+            // перемещаем картинку в инфо
+            info.prepend(image);
+        } else {
+            // иначе возращаем картинки на изначальную позицию
+            $(this).prepend(image);
+        }
     })
-}
+})

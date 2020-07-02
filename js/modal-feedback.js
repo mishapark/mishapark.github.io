@@ -63,12 +63,4 @@ $(".app-close-modal").click(e => {
     e.preventDefault();
 
     $.fancybox.close();
-})
-
-
-
-$(".modal").click(e => {
-    
-        $.fancybox.close();
-    
-})
+});

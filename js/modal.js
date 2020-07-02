@@ -5,6 +5,7 @@
     // Get the <span> element that closes the modal
     const close = document.querySelector("#menu__close");
 
+    const menuItem = $(".menu__item--hamburger");
 
     
     // When the user clicks the button, open the modal 
@@ -26,6 +27,15 @@
         $("body").css("overflow", "auto");
       }
   })
+
+  menuItem.click(e => {
+      e.preventDefault();
+
+      modal.style.display = "none";
+      $("body").css("overflow", "auto");
+})
+  
+
 
   
     // When the user clicks anywhere outside of the modal, close it

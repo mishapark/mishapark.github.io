@@ -933,10 +933,6 @@ input, button {
   }
 }
 
-.input__error {
-  border-color: #e01f3d;
-}
-
 .feedback__form-input {
   width: 100%;
   border: none;
@@ -961,6 +957,10 @@ input, button {
   .feedback__form-input {
     padding: 0.4rem 1.1rem;
   }
+}
+
+.input-error {
+  border-color: #e01f3d;
 }
 
 .feedback__form-controls {
@@ -1052,15 +1052,8 @@ input, button {
 .container--team {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  padding-top: 10%;
-}
-@media screen and (max-width: 768px) {
-  .container--team {
-    justify-content: center;
-    padding: 0;
-  }
 }
 
 .team__title {
@@ -1097,6 +1090,7 @@ input, button {
   align-items: center;
   margin-right: 2rem;
   flex: 1;
+  min-height: 48rem;
 }
 .members__item:last-child {
   margin-right: 0;
@@ -1104,6 +1098,8 @@ input, button {
 @media screen and (max-width: 768px) {
   .members__item {
     margin-bottom: 3rem;
+    margin-right: 0;
+    min-height: 0;
   }
 }
 
@@ -1139,9 +1135,15 @@ input, button {
   transition: height 0.5s;
 }
 
+.members__info--active {
+  height: auto;
+}
+
 .members__link {
   font-weight: bold;
   margin-bottom: 1.3rem;
+  cursor: pointer;
+  font-size: 16px;
 }
 .members__link::after {
   content: "";
@@ -1747,12 +1749,6 @@ input, button {
 
 .modal {
   display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
   align-items: center;
   justify-content: center;
 }
@@ -1762,7 +1758,7 @@ input, button {
 
 .modal__container {
   background: #fff;
-  padding: 35px 60px;
+  padding: 35px 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1771,4 +1767,5 @@ input, button {
 .modal__content {
   margin-bottom: 15px;
   color: #000;
+  text-align: center;
 }
