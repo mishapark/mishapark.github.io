@@ -52,7 +52,8 @@ $(".feedback__form").submit((e) => {
         request.always(() => {
             $.fancybox.open({
                 src: "#modal",
-                type: "inline"
+                type: "inline",
+                touch: false
             });
         })
     }
@@ -64,9 +65,10 @@ $(".app-close-modal").click(e => {
     $.fancybox.close();
 })
 
+
+
 $(".modal").click(e => {
-    if(e.target == $(".modal")) {
-      $(".modal").style.display = "none";
-      $("body").css("overflow", "auto");
-    }
+    
+        $.fancybox.close();
+    
 })
