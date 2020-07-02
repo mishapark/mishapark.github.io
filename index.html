@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beats</title>
     <link rel="stylesheet" href="styles/css/layout/normalize.css">
-    <link rel="stylesheet" href="styles/css/main.css">
     <link rel="stylesheet" href="/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/fancybox-master/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="styles/css/main.css">
 </head>
 <body>
     <div class="wrapper">
@@ -436,39 +437,40 @@
             <div class="container container--feedback">
                 <h2 class="feedback__title">Закажите доставку</h2>
                 <form class="feedback__form">
+                    <input type="hidden" name="to" value="somewhere@mail.com">
                     <div class="feedback__form-col">
                         <div class="feedback__form-row">
                             <label class="feedback__form-block">
                                 <div class="feedback__form-title">Имя</div>
-                                <input type="text" class="feedback__form-input">
+                                <input type="text" class="feedback__form-input" name="name">
                             </label>
                             <label class="feedback__form-block">
                                 <div class="feedback__form-title">Телефон</div>
-                                <input type="text" class="feedback__form-input">
+                                <input type="text" class="feedback__form-input" name="phone">
                             </label>
                         </div>
                         <div class="feedback__form-row">
                             <label class="feedback__form-block">
                                 <div class="feedback__form-title">Улица</div>
-                                <input type="text" class="feedback__form-input">
+                                <input type="text" class="feedback__form-input" name="street">
                             </label>
                         </div>
                         <div class="feedback__form-row">
                             <label class="feedback__form-block">
                                 <div class="feedback__form-title">Дом</div>
-                                <input type="text" class="feedback__form-input">
+                                <input type="text" class="feedback__form-input" name="home">
                             </label>
                             <label class="feedback__form-block">
                                 <div class="feedback__form-title">Корпус</div>
-                                <input type="text" class="feedback__form-input">
+                                <input type="text" class="feedback__form-input" name="part">
                             </label>
                             <label class="feedback__form-block">
                                 <div class="feedback__form-title">Квартира</div>
-                                <input type="text" class="feedback__form-input">
+                                <input type="text" class="feedback__form-input" name="apt">
                             </label>
                             <label class="feedback__form-block">
                                 <div class="feedback__form-title">Этаж</div>
-                                <input type="text" class="feedback__form-input">
+                                <input type="text" class="feedback__form-input" name="floor">
                             </label>
                         </div>
                     </div>
@@ -476,24 +478,24 @@
                         <div class="feedback__form-row">
                             <label class="feedback__form-block">
                                 <div class="feedback__form-title">Комментарий</div>
-                                <textarea class="feedback__form-input feedback__form-input--textarea"></textarea>
+                                <textarea class="feedback__form-input feedback__form-input--textarea" name="comment"></textarea>
                             </label>                       
                         </div>
                         <div class="feedback__form-controls">
                             <label class="radio">
-                                <input type="radio" name="option" class="radio__elem">
+                                <input type="radio" name="change" class="radio__elem">
                                 <div class="radio__visible"></div>
                                 <div class="radio__title">Потребуется сдача</div>
                             </label>
                             <label class="radio">
-                                <input type="radio" name="option" class="radio__elem">
+                                <input type="radio" name="card" class="radio__elem">
                                 <div class="radio__visible"></div>
                                 <div class="radio__title">Оплата по карте</div>
                             </label>
                         </div>
                         <div class="feedback__form-controls feedback__form-controls--checkbox">
                             <label class="radio radio--checkbox">
-                                <input type="checkbox" class="radio__elem">
+                                <input type="checkbox" class="radio__elem" name="callback">
                                 <div class="radio__visible"></div>
                                 <div class="radio__title">Не перезванивать</div>
                             </label>
@@ -585,12 +587,24 @@
             </li>
         </ul>
     </nav>
+    <div id="modal" class="modal">
+        <div class="modal__container">
+            <div class="modal__content">
+                Сообщение отправлено
+            </div>
+            <div class="modal__button-container">
+                <a href="" class="button app-close-modal button--theme--red">Закрыть</a> 
+            </div>
+        </div>
+    </div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./fancybox-master/dist/jquery.fancybox.min.js"></script>
     <script src="./slick/slick.min.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/team.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/reviews.js"></script>
+    <script src="./js/modal-feedback.js"></script>
 </body>
 </html>
