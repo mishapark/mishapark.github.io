@@ -24,7 +24,7 @@ team.addEventListener("click", function(e) {
 })
 
 //следим за изменением размеров окна
-$(window).on('resize', function () {
+$(window).on('resize load', function () {
     // Перебираем все итемы
     $(".members__item").each(function () {
         // находим каждый элемент и в каждом из элементов находим сначала картинку
