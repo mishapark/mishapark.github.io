@@ -6,12 +6,13 @@ team.addEventListener("click", function(e) {
     const listItem = e.currentTarget;
 
     if(link.classList.contains("members__link")) {
-        const active = listItem.querySelector(".members__item.is-active")
+        const active = listItem.querySelector(".members__item.is-active");
 
         if(active) {
             let activeText = active.querySelector(".members__info");
             activeText.style.height = "0px";
             active.classList.remove("is-active");
+            activeText.classList.remove("members__info--active");
         }
 
         if(!active || active.querySelector(".members__link") !== link) {
@@ -25,6 +26,10 @@ team.addEventListener("click", function(e) {
 
 //следим за изменением размеров окна
 $(window).on('resize load', function () {
+    if ($('.members__item.is-active').length === 0) {
+        $('.members__item:first').addClass('is-active');
+        $('.members__info:first').addClass('is-active').height($('.members__info')[0].scrollHeight);
+    }
     // Перебираем все итемы
     $(".members__item").each(function () {
         // находим каждый элемент и в каждом из элементов находим сначала картинку
