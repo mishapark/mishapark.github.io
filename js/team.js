@@ -26,10 +26,6 @@ team.addEventListener("click", function(e) {
 
 //следим за изменением размеров окна
 $(window).on('resize load', function () {
-    if ($('.members__item.is-active').length === 0) {
-        $('.members__item:first').addClass('is-active');
-        $('.members__info:first').addClass('is-active').height($('.members__info')[0].scrollHeight);
-    }
     // Перебираем все итемы
     $(".members__item").each(function () {
         // находим каждый элемент и в каждом из элементов находим сначала картинку
@@ -46,4 +42,8 @@ $(window).on('resize load', function () {
             $(this).prepend(image);
         }
     })
+    if ($('.members__item.is-active').length === 0) {
+        $('.members__item:first').addClass('is-active');
+        $('.members__info:first').addClass('is-active').height($('.members__info')[0].scrollHeight);
+    }
 })
