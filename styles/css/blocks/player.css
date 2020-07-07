@@ -1,0 +1,7 @@
+.player {
+  position: relative;
+}
+
+.player__controls {
+  position: absolute;
+}

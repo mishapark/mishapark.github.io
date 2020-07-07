@@ -1,0 +1,28 @@
+.player {
+    position: relative;
+}
+
+.player__controls {
+    background: #151515;
+    height: 35px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.player__start {
+    width: 16px;
+    height: 22px;
+    border-left: solid 16px #efebeb;
+   border-bottom: solid 16px transparent;
+   border-top: solid 16px transparent;
+}
+
+.player__duration {
+    color: #fff;
+}

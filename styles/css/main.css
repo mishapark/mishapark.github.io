@@ -1176,6 +1176,10 @@ input, button {
 .container__how {
   padding: 6.8rem 0px 9.4rem;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .container__how::after {
   content: "";
@@ -1745,6 +1749,134 @@ input, button {
   background: url(/img/pics/girlball.png) center center no-repeat;
   background-color: #000;
   background-size: cover;
+  position: relative;
+}
+
+.colros__title {
+  color: #ffffff;
+  font-size: 4.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 10rem;
+  padding-left: 8rem;
+}
+
+.colors__list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+}
+
+.colors__item {
+  height: 100%;
+  display: flex;
+}
+
+.active .colors__wrap {
+  width: 63rem;
+}
+@media screen and (max-width: 768px) {
+  .active .colors__wrap {
+    width: calc(100vw - 30rem);
+  }
+}
+@media screen and (max-width: 480px) {
+  .active .colors__wrap {
+    width: calc(100vw - 24rem);
+  }
+}
+@media screen and (max-width: 400px) {
+  .active .colors__wrap {
+    width: calc(100vw - 18rem);
+  }
+}
+
+.colors__trigger {
+  display: flex;
+  width: 10rem;
+  justify-content: center;
+  align-items: flex-end;
+}
+@media screen and (max-width: 480px) {
+  .colors__trigger {
+    width: 8rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .colors__trigger {
+    width: 6rem;
+  }
+}
+
+.colors__subtitle {
+  color: #ffffff;
+  font-size: 3.6rem;
+  font-weight: bold;
+  transform: rotate(-90deg) translateX(55%);
+  white-space: nowrap;
+}
+
+.colors__wrap {
+  width: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.colors__content {
+  min-width: 63rem;
+  padding: 50px 127px 50px 27px;
+  overflow-y: auto;
+  background-color: rgba(51, 53, 55, 0.93);
+  line-height: 1.5;
+  color: #ffffff;
+  position: relative;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .colors__content {
+    min-width: calc(100vw - 30rem);
+    padding-right: 25px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .colors__content {
+    min-width: calc(100vw - 24rem);
+  }
+}
+@media screen and (max-width: 400px) {
+  .colors__content {
+    min-width: calc(100vw - 18rem);
+  }
+}
+
+.colors__close {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 26px;
+  right: 32px;
+}
+.colors__close::before, .colors__close::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: #fff;
+  border-radius: 10px;
+}
+.colors__close::before {
+  transform: rotate(45deg);
+}
+.colors__close::after {
+  transform: rotate(-45deg);
+}
+@media screen and (max-width: 768px) {
+  .colors__close {
+    right: 13px;
+  }
 }
 
 .modal {
@@ -1768,4 +1900,33 @@ input, button {
   margin-bottom: 15px;
   color: #000;
   text-align: center;
+}
+
+.player {
+  position: relative;
+}
+
+.player__controls {
+  background: #151515;
+  height: 35px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.player__start {
+  width: 16px;
+  height: 22px;
+  border-left: solid 16px #efebeb;
+  border-bottom: solid 16px transparent;
+  border-top: solid 16px transparent;
+}
+
+.player__duration {
+  color: #fff;
 }
