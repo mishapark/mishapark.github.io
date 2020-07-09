@@ -20,8 +20,17 @@ function Accordeon(selector) {
             item.classList.add('active');
         }
     });
-
-    
 }
+
+$(".colors__close").on("click", e => {
+    e.preventDefault();
+    const target = e.target.closest('[data-trigger]');
+
+    if (!target) return;
+    
+    const item = target.parentNode;
+    
+    item.classList.remove('active');
+})
 
 new Accordeon('#acc-menu');
