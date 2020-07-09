@@ -1968,6 +1968,7 @@ input, button {
   width: 80%;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .playback__bar--past {
@@ -2003,7 +2004,7 @@ input, button {
 
 .volume__bar--past {
   height: 5px;
-  width: 10px;
+  width: 0;
   background: #e01f3d;
 }
 
