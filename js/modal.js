@@ -11,7 +11,7 @@
     // When the user clicks the button, open the modal 
     btn.addEventListener("click", e => {
         modal.style.display = "flex";
-        $("body").css("height", "100vh");
+        $("body").css("height", "100%");
         $("body").css("overflow", "hidden")
     })
     
