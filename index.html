@@ -468,17 +468,34 @@
                     <div class="player-section__container">
                         <div class="player">
                             <div class="player__wrapper">
-                                <video src="https://youtu.be/U7L-3VXAkSA" controls></video>
-                                <div class="player__splash"></div>
+                                <video src="./video/Beats by Dre - Solo Pro - Billie Eilish.mp4" poster="./img/pics/maxresdefault.jpg" class="player__video"></video>
+                                <!-- <div class="player__splash"></div> -->
                             </div>
                             <div class="player__controls">
-                                <div class="player__start"></div>
-                                <div class="player__playback">
-                                    <button class="player__playback-button"></button>
+                                <div class="buttons">
+                                    <button id="play-pause">
+                                        <svg class="play__pic">
+                                            <use xlink:href="./img/icons/sprite.svg#play"></use>
+                                        </svg>
+                                        <svg class="pause__pic">
+                                            <use xlink:href="./img/icons/sprite.svg#pause"></use>
+                                        </svg>
+                                    </button>
                                 </div>
-                                <div class="player__duration">
-                                    <span class="player__duration-completed">0:00</span> :
-                                    <span class="player__duration-estimate">0:00</span>
+
+                                <div class="playback__bar">
+                                    <div class="playback__bar--past"></div>
+                                    <button class="playback__button"></button>
+                                </div>
+
+                                <div class="player__volume">
+                                    <svg class="volume__pic">
+                                        <use xlink:href="./img/icons/sprite.svg#volume"></use>
+                                    </svg>
+                                    <div class="volume__bar">
+                                        <div class="volume__bar--past"></div>
+                                        <button class="volume__button"></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>

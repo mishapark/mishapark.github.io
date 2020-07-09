@@ -1,5 +1,15 @@
 .player {
     position: relative;
+    width: 66rem;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player__video {
+    width: 100%;
+    height: 100%;
 }
 
 .player__controls {
@@ -15,14 +25,82 @@
     padding-right: 10px;
 }
 
-.player__start {
-    width: 16px;
-    height: 22px;
-    border-left: solid 16px #efebeb;
-   border-bottom: solid 16px transparent;
-   border-top: solid 16px transparent;
+.buttons {
+    width: 5%;
+    display: flex;
+    align-items: center;
+}
+.buttons button {
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    width: 20px;
+    height: 25px;
+}
+.play__pic, .pause__pic{
+    width: 100%;
+    height: 100%;
+    fill: #fff;
 }
 
-.player__duration {
-    color: #fff;
+.pause__pic {
+    display: none;
+}
+
+
+.playback__bar {
+    height: 5px;
+    background: #303030;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+.playback__bar--past {
+    height: 5px;
+    width: 100px;
+    background: #e01f3d;
+}
+.playback__button {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #e01f3d;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+
+.player__volume {
+    width: 13%;
+    display: flex;
+    align-items: center; 
+}
+.volume__bar {
+    display: flex;
+    align-items: center; 
+    background: #303030;
+    width: 6rem;
+    height: 5px;
+    margin-left: 5px;
+}
+.volume__bar--past {
+    height: 5px;
+    width: 10px;
+    background: #e01f3d;
+}
+.volume__button {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #e01f3d;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.volume__pic {
+    width: 30px;
+    height: 25px;
+    fill: #fff;
 }
