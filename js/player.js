@@ -49,7 +49,11 @@ volume.addEventListener('input', function() {
 });
 
 volumeIcon.addEventListener('click', function() {
-    video.volume = 0;
+    if (video.volume == 0) {
+        video.volume = 1;
+    } else {
+        video.volume = 0;
+    }
 })
 
 progress.addEventListener('input', function() {
