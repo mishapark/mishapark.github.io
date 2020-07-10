@@ -1,11 +1,11 @@
 let myMap;
+let zoom = $(window).width() > 480 ? 14 : 8;
 
 const init = () => {
     myMap = new ymaps.Map("map", {
         center: [55.752144, 37.594221],
-        zoom: 14,
+        zoom: zoom,
         controls: []
-
       });
       
       const coords = [

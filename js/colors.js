@@ -24,13 +24,7 @@ function Accordeon(selector) {
 
 $(".colors__close").on("click", e => {
     e.preventDefault();
-    const target = e.target.closest('[data-trigger]');
-
-    if (!target) return;
-    
-    const item = target.parentNode;
-    
-    item.classList.remove('active');
+    $('.colors__item').removeClass('active');
 })
 
 new Accordeon('#acc-menu');

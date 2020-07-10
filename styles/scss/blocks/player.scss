@@ -1,107 +1,155 @@
-.player {
-    position: relative;
+// .player-section__container {
+//     width: 660px;
+//     height: 405px;
+// }
+
+// $grey:#D6D6D6;
+
+// .video {
+// height:100%;
+// width:100%;
+// position: relative;
+// }
+// video {
+//     height:100%;
+//     width:100%;
+//     &::-webkit-media-controls-enclosure,
+//     &::-webkit-media-controls {
+//     display:none !important; // Override display of the original controls
+//     }
+// }
+//     .controls {
+//       height:36px;
+//       width:100%;
+//       position:absolute;
+//       bottom:0;
+//       background:#151515;
+//       z-index:2147483648; // Override z-index of the original controls
+//       &.extended {
+//       }
+//       .playpause,
+//       .volume,
+//       .fullscreen {
+//         width:48px;
+//         padding:12px 0;
+//         color:$grey;
+//         font-size:16px;
+//         text-align:center;
+//       }
+//       .progress {
+//         width:calc(100% - 208px);
+//         position:absolute;
+//         top:0;
+//         bottom:0;
+//         left:54px;
+//         margin:auto;
+//         background:transparent;
+//       }
+//       .volume {
+//         position:absolute;
+//         right:96px;
+//         input {
+//           background:transparent;
+//           width:48px;
+//           position:absolute;
+//           top:0;
+//           bottom:0;
+//           left:44px;
+//           margin:auto;
+//         }
+//       }
+//       .fullscreen {
+//         position:absolute;
+//         right:0;
+//         top:0;
+//       }
+//     }
+  
+// .text {
+// width:360px;
+// position:absolute;
+// top:280px;
+// left:0;
+// right:0;
+// bottom:auto;
+// font-size:48px;
+// text-align:center;
+// font-family:"Roboto Condensed";
+// }
+
+// .whitespace {
+//   height:40px;
+//   position:absolute;
+//   bottom:-40px;
+// }
+
+
+.video {
     width: 66rem;
     height: 40rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 }
-
-.player__video {
-    width: 100%;
+video {
     height: 100%;
+    width: 100%;
+    position: relative;
+}
+.video__icon {
+    fill: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 30%;
 }
 
-.player__controls {
-    background: #151515;
-    height: 35px;
+
+
+.controls {
     position: absolute;
-    bottom: 0;
+    height: 36px;
     width: 100%;
+    bottom: 0;
+    background: #151515;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;
 }
+.progress {
+    width: 68%;
+    margin-right: 20px;
+}
+.playpause {
+    margin-right: 10px;
+    width: 15px;
+}
+.pause {
+    cursor: pointer;
+    height: 0;
+    border: 11px solid transparent;
+    border-left-color: #fff;
+    border-right-width: 0;
+    background: transparent;
+}
+.play {
+    cursor: pointer;
+    border: 7px solid #fff;
+    height: 20px;
+    border-top: 0;
+    border-bottom: 0;
+    padding: 1px;
+}
 
-.buttons {
-    width: 5%;
+.volume {
     display: flex;
     align-items: center;
 }
-.buttons button {
-    background: none;
-    border: 0;
-    outline: 0;
-    cursor: pointer;
-    width: 20px;
-    height: 25px;
-}
-.play__pic, .pause__pic{
-    width: 100%;
-    height: 100%;
+.volume__icon {
     fill: #fff;
-}
-
-.pause__pic {
-    display: none;
-}
-
-
-.playback__bar {
-    height: 5px;
-    background: #303030;
-    width: 80%;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-.playback__bar--past {
-    height: 5px;
-    width: 100px;
-    background: #e01f3d;
-}
-.playback__button {
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    background: #e01f3d;
-    border: 0;
-    outline: 0;
-    cursor: pointer;
-}
-
-
-.player__volume {
-    width: 13%;
-    display: flex;
-    align-items: center; 
-}
-.volume__bar {
-    display: flex;
-    align-items: center; 
-    background: #303030;
-    width: 6rem;
-    height: 5px;
-    margin-left: 5px;
-}
-.volume__bar--past {
-    height: 5px;
-    width: 0;
-    background: #e01f3d;
-}
-.volume__button {
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    background: #e01f3d;
-    border: 0;
-    outline: 0;
-    cursor: pointer;
-}
-.volume__pic {
-    width: 30px;
-    height: 25px;
-    fill: #fff;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
 }

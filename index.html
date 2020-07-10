@@ -466,39 +466,25 @@
                     <h2 class="how__title">Как мы работаем</h2>
                     
                     <div class="player-section__container">
-                        <div class="player">
-                            <div class="player__wrapper">
-                                <video src="./video/Beats by Dre - Solo Pro - Billie Eilish.mp4" poster="./img/pics/maxresdefault.jpg" class="player__video"></video>
-                                <!-- <div class="player__splash"></div> -->
+                        <div class="video">
+                            <video id="video" poster="./img/pics/maxresdefault.jpg">
+                                <source src="./video/y2mate.com - Beats by Dre _ Solo Pro _ Billie Eilish_gvYNxcZQ3B4_1080p.mp4"></source>
+                            </video>
+                            <svg class="video__icon">
+                                <use xlink:href="./img/icons/sprite.svg#play"></use>
+                            </svg>
+                            <div class="controls">
+                              <div class="playpause pause">
+                              </div>
+                              <input class="progress" type="range" value="0"></input>
+                              <div class="volume">
+                                <svg class="volume__icon">
+                                    <use xlink:href="./img/icons/sprite.svg#volume"></use>
+                                </svg>
+                                <input class="volume-input" type="range"></input>
+                              </div>
                             </div>
-                            <div class="player__controls">
-                                <div class="buttons">
-                                    <button id="play-pause">
-                                        <svg class="play__pic">
-                                            <use xlink:href="./img/icons/sprite.svg#play"></use>
-                                        </svg>
-                                        <svg class="pause__pic">
-                                            <use xlink:href="./img/icons/sprite.svg#pause"></use>
-                                        </svg>
-                                    </button>
-                                </div>
-
-                                <div class="playback__bar">
-                                    <div class="playback__bar--past"></div>
-                                    <button class="playback__button"></button>
-                                </div>
-
-                                <div class="player__volume">
-                                    <svg class="volume__pic">
-                                        <use xlink:href="./img/icons/sprite.svg#volume"></use>
-                                    </svg>
-                                    <div class="volume__bar">
-                                        <div class="volume__bar--past"></div>
-                                        <button class="volume__button"></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                          </div>
                     </div>
     
                     <div class="how__decor">

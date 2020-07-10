@@ -72,6 +72,107 @@ input, button {
   will-change: transform;
 }
 
+input[type=range] {
+  background-color: transparent;
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  background: #e01f3d;
+  border: 0px solid rgba(1, 1, 1, 0);
+  border: 0;
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  margin-top: -4px;
+  width: 13px;
+  height: 13px;
+  background: #e01f3d;
+  border: 1px solid rgba(0, 31, 61, 0);
+  border-radius: 7px;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #e33550;
+}
+
+input[type=range]::-moz-range-track {
+  background: #e01f3d;
+  border: 0px solid rgba(1, 1, 1, 0);
+  border: 0;
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+  width: 13px;
+  height: 13px;
+  background: #e01f3d;
+  border: 1px solid rgba(0, 31, 61, 0);
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+  background: transparent;
+  border-color: transparent;
+  border-width: 4px 0;
+  color: transparent;
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: #ca1c37;
+  border: 0px solid rgba(1, 1, 1, 0);
+  border: 0;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: #e01f3d;
+  border: 0px solid rgba(1, 1, 1, 0);
+  border: 0;
+}
+
+input[type=range]::-ms-thumb {
+  width: 13px;
+  height: 13px;
+  background: #e01f3d;
+  border: 1px solid rgba(0, 31, 61, 0);
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top: 0px;
+  /*Needed to keep the Edge thumb centred*/
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #e01f3d;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background: #e33550;
+}
+
+/*TODO: Use one of the selectors from https://stackoverflow.com/a/20541859/7077589 and figure out
+how to remove the virtical space around the range input in IE*/
+@supports (-ms-ime-align: auto) {
+  /* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
+  input[type=range] {
+    margin: 0;
+    /*Edge starts the margin from the thumb, not the track as other browsers do*/
+  }
+}
 @media (max-width: 768px) {
   html {
     font-size: 9px;
@@ -1910,116 +2011,77 @@ input, button {
   text-align: center;
 }
 
-.player {
-  position: relative;
+.video {
   width: 66rem;
   height: 40rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
 }
 
-.player__video {
-  width: 100%;
+video {
   height: 100%;
+  width: 100%;
+  position: relative;
 }
 
-.player__controls {
-  background: #151515;
-  height: 35px;
+.video__icon {
+  fill: #fff;
   position: absolute;
-  bottom: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 30%;
+}
+
+.controls {
+  position: absolute;
+  height: 36px;
   width: 100%;
+  bottom: 0;
+  background: #151515;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.buttons {
-  width: 5%;
+.progress {
+  width: 68%;
+  margin-right: 20px;
+}
+
+.playpause {
+  margin-right: 10px;
+  width: 15px;
+}
+
+.pause {
+  cursor: pointer;
+  height: 0;
+  border: 11px solid transparent;
+  border-left-color: #fff;
+  border-right-width: 0;
+  background: transparent;
+}
+
+.play {
+  cursor: pointer;
+  border: 7px solid #fff;
+  height: 20px;
+  border-top: 0;
+  border-bottom: 0;
+  padding: 1px;
+}
+
+.volume {
   display: flex;
   align-items: center;
 }
 
-.buttons button {
-  background: none;
-  border: 0;
-  outline: 0;
-  cursor: pointer;
-  width: 20px;
-  height: 25px;
-}
-
-.play__pic, .pause__pic {
-  width: 100%;
-  height: 100%;
+.volume__icon {
   fill: #fff;
-}
-
-.pause__pic {
-  display: none;
-}
-
-.playback__bar {
-  height: 5px;
-  background: #303030;
-  width: 80%;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-.playback__bar--past {
-  height: 5px;
-  width: 100px;
-  background: #e01f3d;
-}
-
-.playback__button {
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  background: #e01f3d;
-  border: 0;
-  outline: 0;
-  cursor: pointer;
-}
-
-.player__volume {
-  width: 13%;
-  display: flex;
-  align-items: center;
-}
-
-.volume__bar {
-  display: flex;
-  align-items: center;
-  background: #303030;
-  width: 6rem;
-  height: 5px;
-  margin-left: 5px;
-}
-
-.volume__bar--past {
-  height: 5px;
-  width: 0;
-  background: #e01f3d;
-}
-
-.volume__button {
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  background: #e01f3d;
-  border: 0;
-  outline: 0;
-  cursor: pointer;
-}
-
-.volume__pic {
-  width: 30px;
-  height: 25px;
-  fill: #fff;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
 }

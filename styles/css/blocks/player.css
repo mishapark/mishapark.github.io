@@ -1,7 +1,74 @@
-.player {
+.video {
+  width: 66rem;
+  height: 40rem;
   position: relative;
 }
 
-.player__controls {
+video {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.video__icon {
+  fill: #fff;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 30%;
+}
+
+.controls {
+  position: absolute;
+  height: 36px;
+  width: 100%;
+  bottom: 0;
+  background: #151515;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.progress {
+  width: 68%;
+  margin-right: 20px;
+}
+
+.playpause {
+  margin-right: 10px;
+  width: 15px;
+}
+
+.pause {
+  cursor: pointer;
+  height: 0;
+  border: 11px solid transparent;
+  border-left-color: #fff;
+  border-right-width: 0;
+  background: transparent;
+}
+
+.play {
+  cursor: pointer;
+  border: 7px solid #fff;
+  height: 20px;
+  border-top: 0;
+  border-bottom: 0;
+  padding: 1px;
+}
+
+.volume {
+  display: flex;
+  align-items: center;
+}
+
+.volume__icon {
+  fill: #fff;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
 }
