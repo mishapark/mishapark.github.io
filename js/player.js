@@ -4,6 +4,7 @@ var video = document.getElementById('video'),
     progress = document.getElementsByClassName('progress')[0],
     volume = document.getElementsByClassName('volume-input')[0],
     icon = document.getElementsByClassName('video__icon')[0],
+    volumeIcon = document.getElementsByClassName('volume__icon')[0],
     updateProgress;
 
 playPause.addEventListener('click', function() {
@@ -46,6 +47,10 @@ video.addEventListener('play', function() {
 volume.addEventListener('input', function() {
   video.volume = volume.value/100;
 });
+
+volumeIcon.addEventListener('click', function() {
+    video.volume = 0;
+})
 
 progress.addEventListener('input', function() {
   updateProgress = null;
