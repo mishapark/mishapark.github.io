@@ -3,14 +3,14 @@ module.exports = {
     DIST_PATH : "dist",
     STYLES_LIBS : [
         "node_modules/normalize.css/normalize.css",
-        "node_modules/slick-carousel/slick/slick.css",
-        // "node_modules/fancybox/dist/css/jquery.fancybox.css"
+        "src/libs/slick/slick.css",
+        "src/libs/fancybox-master/dist/jquery.fancybox.min.css"
     ],
     JS_LIBS : [
         "node_modules/jquery/dist/jquery.js",
-        "node_modules/slick-carousel/slick/slick.js",
+        "src/libs/slick/slick.min.js",
+        "src/libs/fancybox-master/dist/jquery.fancybox.min.js",
         "node_modules/mobile-detect/mobile-detect.js",
         "node_modules/jquery-touchswipe/jquery.touchSwipe.js",
-        // "node_modules/fancybox/dist/js/jquery.fancybox.js"
     ]
 }

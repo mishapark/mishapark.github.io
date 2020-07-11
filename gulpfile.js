@@ -48,6 +48,27 @@ task ("copy:video", ()=> {
     .pipe(reload({stream: true}));
 });
 
+
+const slick = [
+    `${SRC_PATH}/libs/slick/slick.css`,
+    `${SRC_PATH}/libs/slick/slick.min.js`
+]
+task ("copy:slick", ()=> {
+    return src(slick)
+    .pipe(dest(`${DIST_PATH}/libs/slick`))
+    .pipe(reload({stream: true}));
+});
+
+const fancy = [
+    `${SRC_PATH}/libs/fancybox-master/dist/jquery.fancybox.min.css`,
+    `${SRC_PATH}/libs/fancybox-master/dist/jquery.fancybox.min.js`
+]
+task ("copy:fancy", ()=> {
+    return src(fancy)
+    .pipe(dest(`${DIST_PATH}/libs/fancybox`))
+    .pipe(reload({stream: true}));
+});
+
 task ("styles", ()=> {
     return src([...STYLES_LIBS, `${SRC_PATH}/styles/main.scss`])
     .pipe(gulpif(env == "dev", sourcemaps.init()))
@@ -120,12 +141,12 @@ task("watch", () => {
 
 task("default",
     series("clean",
-    parallel("copy:html", "styles", "scripts", "icons", "copy:pics", "copy:video"), 
+    parallel("copy:html", "styles", "scripts", "copy:slick", "copy:fancy", "icons", "copy:pics", "copy:video"), 
     parallel("watch", "server")
     )
 );
 
 task(
     "build",
-    series("clean", parallel("copy:html", "styles", "scripts", "icons", "copy:pics", "copy:video"))
+    series("clean", parallel("copy:html", "styles", "scripts", "copy:slick", "copy:fancy", "icons", "copy:pics", "copy:video"))
 );
