@@ -1,0 +1,26 @@
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 10px;
+  @include tablets {
+    display: none;
+  }
+}
+.menu__item {
+  margin-right: 2.6rem;
+  margin-bottom: 5px;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+.menu__item-link {
+  font-size: 1.6rem;
+  white-space: nowrap;
+  transition: color 0.5s;
+
+  &:hover {
+    color: #e01f3d;
+  }
+}

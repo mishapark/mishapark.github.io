@@ -1,9 +1,0 @@
-.contacts__phone {
-  font-size: 2.1rem;
-  font-style: normal;
-}
-.contacts__phone::before {
-  content: url(../../../img/pics/phone.png);
-  display: inline-block;
-  margin-right: 4px;
-}

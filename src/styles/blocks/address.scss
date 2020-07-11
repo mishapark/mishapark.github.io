@@ -1,0 +1,23 @@
+.contacts {
+    padding-top: 4px;
+    transition: color 0.5s, fill 0.5s;
+    
+    @include tablets {
+        display: none;
+      }
+
+    &:hover {
+    color: #e01f3d;
+    fill: #e01f3d;
+    }
+}
+.contacts__phone {
+    font-size: 2.1rem;
+    font-style: normal;
+    white-space: nowrap;
+}
+.contacts__img {
+    height: 13px;
+    width: 13px;
+    display: inline-block;
+}
