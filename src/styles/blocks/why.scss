@@ -65,7 +65,7 @@
     width: 32%;
     position: relative;
     &::after {
-        content: url(/img/pics/1.png);
+        content: url(../img/pics/1.png);
         position: absolute;
         right: -7%;
         top: 20%;
