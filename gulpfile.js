@@ -14,41 +14,42 @@ const uglify = require('gulp-uglify');
 const svgo = require('gulp-svgo');
 const svgSprite = require('gulp-svg-sprite');
 const gulpif = require('gulp-if');
-
+​
 const env = process.env.NODE_ENV;
-
+​
 const {DIST_PATH, SRC_PATH, STYLES_LIBS, JS_LIBS} = require("./gulp.config")
-
+​
 sass.compiler = require('node-sass');
-
+​
 task( 'clean', () => {
     return src( `${DIST_PATH}/**/*`, { read: false })
       .pipe( rm() )
 });
-
+​
 task ("copy:html", ()=> {
     return src(`${SRC_PATH}/*.html`)
     .pipe(dest(DIST_PATH))
     .pipe(reload({stream: true}));
 });
-
+​
 const pics = [
     `${SRC_PATH}/img/pics/*.png`,
-    `${SRC_PATH}/img/pics/*.jpg`
+    `${SRC_PATH}/img/pics/*.jpg`,
+    `${SRC_PATH}/img/pics/*.svg`
 ];
 task ("copy:pics", ()=> {
     return src(pics)
     .pipe(dest(`${DIST_PATH}/img/pics`))
     .pipe(reload({stream: true}));
 });
-
+​
 task ("copy:video", ()=> {
     return src(`${SRC_PATH}/video/*.mp4`)
     .pipe(dest(`${DIST_PATH}/video`))
     .pipe(reload({stream: true}));
 });
-
-
+​
+​
 const slick = [
     `${SRC_PATH}/libs/slick/slick.css`,
     `${SRC_PATH}/libs/slick/slick.min.js`
@@ -58,7 +59,7 @@ task ("copy:slick", ()=> {
     .pipe(dest(`${DIST_PATH}/libs/slick`))
     .pipe(reload({stream: true}));
 });
-
+​
 const fancy = [
     `${SRC_PATH}/libs/fancybox-master/dist/jquery.fancybox.min.css`,
     `${SRC_PATH}/libs/fancybox-master/dist/jquery.fancybox.min.js`
@@ -68,13 +69,21 @@ task ("copy:fancy", ()=> {
     .pipe(dest(`${DIST_PATH}/libs/fancybox`))
     .pipe(reload({stream: true}));
 });
-
-task ("styles", ()=> {
-    return src([...STYLES_LIBS, `${SRC_PATH}/styles/main.scss`])
+​
+task ("sass", ()=> {
+    return src([`${SRC_PATH}/styles/main.scss`])
     .pipe(gulpif(env == "dev", sourcemaps.init()))
     .pipe(concat("main.min.scss"))
     .pipe(sassGlob())
     .pipe(sass().on('error', sass.logError))
+    .pipe(dest(`${SRC_PATH}/styles`))
+    .pipe(reload({stream: true}));
+});
+​
+task ("styles", ()=> {
+    return src([...STYLES_LIBS, `${SRC_PATH}/styles/main.min.css`])
+    .pipe(gulpif(env == "dev", sourcemaps.init()))
+    .pipe(concat("main.min.css"))
     .pipe(gulpif(env == "dev",
     autoprefixer({cascade: false})
     ))
@@ -84,7 +93,7 @@ task ("styles", ()=> {
     .pipe(dest(`${DIST_PATH}/styles`))
     .pipe(reload({stream: true}));
 });
-
+​
 task('scripts', () => {
     return src([...JS_LIBS, `${SRC_PATH}/js/*.js`])
     .pipe(gulpif(env == "dev", sourcemaps.init()))
@@ -99,7 +108,7 @@ task('scripts', () => {
     .pipe(dest(`${DIST_PATH}/js`))
     .pipe(reload({stream: true}));
 })
-
+​
 task ("icons", () => {
     return src(`${SRC_PATH}/img/icons/*.svg`)
     .pipe(svgo({
@@ -121,7 +130,7 @@ task ("icons", () => {
     }))
     .pipe(dest(`${DIST_PATH}/img/icons`))
 });
-
+​
 task('server', () => {
     browserSync.init({
         server: {
@@ -130,22 +139,22 @@ task('server', () => {
         open: false
     });
 });
-
-
+​
+​
 task("watch", () => {
-    watch("./src/styles/**/*.scss", series('styles'));
+    watch("./src/styles/**/*.scss", series('sass','styles'));
     watch("./src/*.html", series('copy:html'));
     watch("./src/js/*.js", series('scripts'));
     watch("./src/images/icons/*.svg", series('icons'));
 })
-
+​
 task("default",
-    series("clean",
+    series("clean", "sass",
     parallel("copy:html", "styles", "scripts", "copy:slick", "copy:fancy", "icons", "copy:pics", "copy:video"), 
     parallel("watch", "server")
     )
 );
-
+​
 task(
     "build",
     series("clean", parallel("copy:html", "styles", "scripts", "copy:slick", "copy:fancy", "icons", "copy:pics", "copy:video"))

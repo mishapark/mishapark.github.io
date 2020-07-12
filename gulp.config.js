@@ -4,7 +4,8 @@ module.exports = {
     STYLES_LIBS : [
         "node_modules/normalize.css/normalize.css",
         "src/libs/slick/slick.css",
-        "src/libs/fancybox-master/dist/jquery.fancybox.min.css"
+        "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css"
+        // "src/libs/fancybox-master/dist/jquery.fancybox.min.css"
     ],
     JS_LIBS : [
         "node_modules/jquery/dist/jquery.js",

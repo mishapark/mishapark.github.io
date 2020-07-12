@@ -1,5 +1,5 @@
 let myMap;
-let zoom = $(window).width() > 480 ? 14 : 8;
+let zoom = $(window).width() > 768 ? 14 : 8;
 
 const init = () => {
     myMap = new ymaps.Map("map", {
@@ -18,7 +18,7 @@ const init = () => {
       const myCollection = new ymaps.GeoObjectCollection({}, {
         draggable: false,
         iconLayout: 'default#image',
-        iconImageHref: '/img/icons/sprite.svg#map',
+        iconImageHref: '/img/pics/map.svg',
         iconImageSize: [46, 57],
         iconImageOffset: [-35, -52]
       });

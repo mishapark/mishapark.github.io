@@ -83,10 +83,11 @@
 //   bottom:-40px;
 // }
 
-
+.player-section__container {
+    width: 90%;
+}
 .video {
-    width: 66rem;
-    height: 40rem;
+    width: 100%;
     position: relative;
 }
 video {
@@ -108,7 +109,7 @@ video {
 
 .controls {
     position: absolute;
-    height: 36px;
+    height: 3.6rem;
     width: 100%;
     bottom: 0;
     background: #151515;
@@ -146,6 +147,7 @@ video {
 .volume {
     display: flex;
     align-items: center;
+    width: 30%;
 }
 .volume__icon {
     fill: #fff;
@@ -153,4 +155,8 @@ video {
     height: 18px;
     margin-right: 10px;
     cursor: pointer;
+    flex-shrink: 0;
+}
+.volume-input {
+    width: 100%;
 }
