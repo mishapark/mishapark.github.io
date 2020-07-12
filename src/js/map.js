@@ -1,5 +1,5 @@
 let myMap;
-let zoom = $(window).width() > 768 ? 14 : 8;
+let zoom = $(window).width() > 480 ? 14 : 13;
 
 const init = () => {
     myMap = new ymaps.Map("map", {

@@ -55,12 +55,13 @@ $(".feedback__form").submit((e) => {
                 type: "inline",
                 touch: false
             });
+            inScroll = true;
         })
     }
 });
 
 $(".app-close-modal").click(e => {
     e.preventDefault();
-
     $.fancybox.close();
+    inScroll = false;
 });
