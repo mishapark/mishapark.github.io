@@ -567,7 +567,7 @@ template {
       margin-bottom: 0; } }
 
 .colors {
-  background: url(/dist/img/pics/girlball.png) center center no-repeat;
+  background: url(../../img/pics/girlball.png) center center no-repeat;
   background-color: #000;
   background-size: cover;
   position: relative; }
@@ -723,7 +723,7 @@ template {
   margin-left: auto; }
 
 .feedback {
-  background: url(/dist/img/pics/formsbg.png) center bottom no-repeat;
+  background: url(../../img/pics/formsbg.png) center bottom no-repeat;
   background-color: #171717; }
 
 .container--feedback {
