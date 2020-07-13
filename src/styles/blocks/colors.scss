@@ -19,6 +19,11 @@
     right: 0;
     height: 100%;
     display: flex;
+
+    @include phones {
+        width: 100%;
+        justify-content: flex-end;
+    }
 }
 
 .colors__item {
@@ -34,11 +39,22 @@
     }
 
     @include phones {
-        width: calc(100vw - 24rem);
+        width: calc(100vw - 8rem);
+        z-index: 2;
     }
 
     @include mobiles {
-        width: calc(100vw - 18rem);
+        width: calc(100vw - 6rem);
+    }
+}
+
+li.colors__item.active {
+    width: 100%;
+}
+
+.active {
+    @include phones{
+    position: absolute;
     }
 }
 
@@ -87,11 +103,11 @@
     }
 
     @include phones {
-        min-width: calc(100vw - 24rem);
+        min-width: calc(100vw - 8rem);
     }
 
     @include mobiles {
-        min-width: calc(100vw - 18rem);
+        min-width: calc(100vw - 6rem);
     }
 }
 
