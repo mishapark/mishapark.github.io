@@ -1845,7 +1845,8 @@ video {
   font-size: 4.8rem;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 0.4rem; }
+  margin-bottom: 0.4rem;
+  margin-top: 0; }
   @media screen and (max-width: 480px) {
     .why__title {
       font-size: 4rem;

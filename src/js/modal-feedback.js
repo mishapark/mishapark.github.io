@@ -53,7 +53,8 @@ $(".feedback__form").submit((e) => {
             $.fancybox.open({
                 src: "#modal",
                 type: "inline",
-                touch: false
+                touch: false,
+                afterClose: ()=>{inScroll=false}
             });
             inScroll = true;
         })
@@ -65,3 +66,7 @@ $(".app-close-modal").click(e => {
     $.fancybox.close();
     inScroll = false;
 });
+
+
+
+
